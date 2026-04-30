@@ -41,8 +41,8 @@ transition: all 0.3s ease; display: inline-flex; align-items: center; justify-co
 .perspective-grid {
 background-size: 50px 50px;
 background-image:
-linear-gradient(to right, rgba(201, 166, 70, 0.05) 1px, transparent 1px),
-linear-gradient(to bottom, rgba(201, 166, 70, 0.05) 1px, transparent 1px);
+linear-gradient(to right, rgba(201, 166, 70, 0.08) 1px, transparent 1px),
+linear-gradient(to bottom, rgba(201, 166, 70, 0.08) 1px, transparent 1px);
 mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 pointer-events: none;
@@ -499,7 +499,7 @@ font-weight: 600;
                 <p class="text-sm text-neutral-400 leading-relaxed mb-8">
                     Studies are published quietly. Subscribers are notified privately, before the archive is updated publicly.
                 </p>
-                <form class="flex flex-col sm:flex-row gap-3">
+                <form class="flex flex-col sm:flex-row gap-3" action="mailto:hello@legacybridgepublishing.com?subject=Legacy%20Studies%20Newsletter%20Subscribe" method="post" enctype="text/plain">
                     <input type="email" placeholder="your@email.com" class="flex-1 bg-transparent border border-white/15 rounded-full px-5 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-[#C9A646] transition-colors">
                     <button type="submit" class="shiny-cta whitespace-nowrap">
                         <span>Subscribe</span>
