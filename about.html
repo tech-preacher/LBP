@@ -88,8 +88,8 @@ border-color: rgba(255,255,255,0.15);
 .perspective-grid {
 background-size: 50px 50px;
 background-image:
-linear-gradient(to right, rgba(201, 166, 70, 0.08) 1px, transparent 1px),
-linear-gradient(to bottom, rgba(201, 166, 70, 0.08) 1px, transparent 1px);
+linear-gradient(to right, rgba(201, 166, 70, 0.05) 1px, transparent 1px),
+linear-gradient(to bottom, rgba(201, 166, 70, 0.05) 1px, transparent 1px);
 mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 pointer-events: none;
@@ -539,6 +539,47 @@ document.addEventListener("DOMContentLoaded", () => {
             link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
         });
     }
+
+// --- MAILTO FORM HANDLER ---
+document.querySelectorAll("form[data-mailto-form]").forEach(form => {
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const status = form.querySelector("[data-form-status]");
+        const fields = form.querySelectorAll("input[name], textarea[name], select[name]");
+        const checked = form.querySelectorAll("input[type=radio]:checked");
+        let lines = [];
+        const data = {};
+        fields.forEach(f => { if (f.value && f.value.trim()) data[f.name] = f.value.trim(); });
+        checked.forEach(c => { data[c.name] = c.value; });
+        if (!data.email) {
+            if (status) {
+                status.classList.remove("hidden");
+                status.style.borderColor = "rgba(239, 68, 68, 0.4)";
+                status.style.background = "rgba(239, 68, 68, 0.08)";
+                status.textContent = "Please provide your email so we can reach you.";
+            }
+            return;
+        }
+        Object.entries(data).forEach(([k,v]) => {
+            const label = k.charAt(0).toUpperCase() + k.slice(1);
+            lines.push(label + ": " + v);
+        });
+        lines.push("", "— Sent from legacybridgepublishing.com");
+        const subject = form.dataset.mailtoSubject || "Inquiry — Legacy Bridge Publishing";
+        const body = lines.join("\n");
+        const mailto = "mailto:hello@legacybridgepublishing.com" +
+            "?subject=" + encodeURIComponent(subject) +
+            "&body=" + encodeURIComponent(body);
+        window.location.href = mailto;
+        if (status) {
+            status.classList.remove("hidden");
+            status.style.borderColor = "rgba(201, 166, 70, 0.3)";
+            status.style.background = "rgba(201, 166, 70, 0.05)";
+            status.innerHTML = "<strong class=\"text-white\">Thank you.</strong> Your email composer should open momentarily — please send to complete your inquiry. If nothing happened, email <a href=\"mailto:hello@legacybridgepublishing.com\" class=\"text-[#C9A646] underline\">hello@legacybridgepublishing.com</a> directly.";
+        }
+        form.reset();
+    });
+});
 });
 </script>
 
