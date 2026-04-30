@@ -1,0 +1,545 @@
+<html lang="en" class="scroll-smooth"><head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Legacy Bridge Publishing</title>
+<link rel="icon" type="image/png" href="assets/logos/LBP icon gold.png">
+<link rel="apple-touch-icon" href="assets/logos/LBP icon gold.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;500;600;700;900&amp;family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+--gold-primary: #C9A646;
+--gold-light: #E5C158;
+--gold-dim: #7A6428;
+}
+body {
+background-color: #0A1F44;
+color: #e5e5e5;
+font-family: 'Inter', sans-serif;
+overflow-x: hidden;
+-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Space Grotesk', sans-serif;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #06142D; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-primary); }
+@keyframes animationIn {
+0% { opacity: 0; transform: translate3d(0, 30px, 0); filter: blur(8px); }
+100% { opacity: 1; transform: translate3d(0, 0, 0); filter: blur(0px); }
+}
+.animate-on-scroll {
+opacity: 0;
+will-change: transform, opacity, filter;
+}
+.animate-on-scroll.animate {
+animation: animationIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+.shiny-cta {
+position: relative;
+padding: 0.75rem 2rem;
+font-size: 0.875rem;
+font-weight: 500;
+color: #ffffff;
+background-color: #0A0A0A;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 9999px;
+overflow: hidden;
+transition: all 0.4s ease;
+cursor: pointer;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+z-index: 1;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+}
+.shiny-cta:hover {
+border-color: rgba(201, 166, 70, 0.4);
+box-shadow: 0 0 15px rgba(201, 166, 70, 0.15);
+transform: translateY(-1px);
+}
+.btn-secondary {
+position: relative;
+padding: 0.75rem 2rem;
+border-radius: 9999px;
+font-size: 0.875rem;
+font-weight: 500;
+color: #a3a3a3;
+background: rgba(255,255,255,0.03);
+border: 1px solid rgba(255,255,255,0.08);
+transition: all 0.3s ease;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+}
+.btn-secondary:hover {
+background: rgba(255,255,255,0.08);
+color: white;
+border-color: rgba(255,255,255,0.15);
+}
+.perspective-grid {
+background-size: 50px 50px;
+background-image:
+linear-gradient(to right, rgba(201, 166, 70, 0.05) 1px, transparent 1px),
+linear-gradient(to bottom, rgba(201, 166, 70, 0.05) 1px, transparent 1px);
+mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+-webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+pointer-events: none;
+}
+section { scroll-margin-top: 96px; }
+.gold-divider {
+height: 1px;
+background: linear-gradient(to right, transparent, rgba(201,166,70,0.5), transparent);
+}
+.monogram {
+background: radial-gradient(circle at 30% 30%, rgba(201,166,70,0.25), rgba(201,166,70,0.05) 70%);
+}
+</style>
+</head>
+<body class="selection:bg-[#C9A646] selection:text-black antialiased bg-black">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center group shrink-0">
+                <img src="assets/logos/LBP Horizontal.png" alt="Legacy Bridge Publishing" class="h-11 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-[13px]">
+                <a href="index.html" class="text-neutral-400 hover:text-white transition-colors">Home</a>
+
+                <div class="relative group">
+                    <a href="about.html" class="text-[#C9A646] hover:text-white transition-colors flex items-center gap-1">
+                        About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-56 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="about.html#philosophy" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Philosophy</a>
+                            <a href="about.html#founder" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Founder</a>
+                            <a href="about.html#pillars" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Pillars</a>
+                            <a href="about.html#council" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Advisory Council</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <a href="pathways.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-1">
+                        Pathways
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-64 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="pathways.html#sovereign" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Sovereign Pathway</a>
+                            <a href="pathways.html#partnership" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Partnership Pathway</a>
+                            <a href="pathways.html#institutional" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">The Institutional Pathway</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="faqs.html" class="text-neutral-400 hover:text-white transition-colors">FAQs</a>
+                <a href="authors.html" class="text-neutral-400 hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="text-neutral-400 hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="text-neutral-400 hover:text-white transition-colors whitespace-nowrap">Media &amp; Press</a>
+                <a href="contact.html" class="text-neutral-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="tel:+2348118194036" class="hidden sm:flex items-center gap-2 text-[13px] text-neutral-300 hover:text-[#C9A646] transition-colors group">
+                    <span class="w-9 h-9 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] group-hover:bg-[#C9A646]/10 transition-colors">
+                        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>
+                    </span>
+                    <span class="hidden xl:inline whitespace-nowrap font-medium tracking-tight">+234 8118194036</span>
+                </a>
+                <button id="mobile-menu-toggle" aria-label="Open menu" class="lg:hidden w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-neutral-300 hover:text-white hover:border-white/30 transition-colors">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="20"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden hidden border-t border-white/5 bg-[#0A1F44]/95 backdrop-blur-xl">
+            <div class="px-6 py-4 flex flex-col gap-1 text-sm">
+                <a href="index.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Home</a>
+                <details class="group" open>
+                    <summary class="py-2.5 text-[#C9A646] cursor-pointer flex items-center justify-between list-none">About Us<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="#philosophy" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Philosophy</a>
+                        <a href="#founder" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Founder</a>
+                        <a href="#pillars" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Pillars</a>
+                        <a href="#council" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Advisory Council</a>
+                    </div>
+                </details>
+                <details class="group">
+                    <summary class="py-2.5 text-neutral-300 hover:text-[#C9A646] cursor-pointer flex items-center justify-between list-none">Pathways<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="pathways.html#sovereign" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Sovereign Pathway</a>
+                        <a href="pathways.html#partnership" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Partnership Pathway</a>
+                        <a href="pathways.html#institutional" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">The Institutional Pathway</a>
+                    </div>
+                </details>
+                <a href="faqs.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">FAQs</a>
+                <a href="authors.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Authors</a>
+                <a href="legacy-studies.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Legacy Studies</a>
+                <a href="media-press.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Media &amp; Press</a>
+                <a href="contact.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Contact</a>
+                <a href="tel:+2348118194036" class="mt-3 py-3 px-4 rounded-lg border border-[#C9A646]/40 text-[#C9A646] flex items-center gap-2"><iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>+234 8118194036</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 perspective-grid -z-20"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C9A646] opacity-[0.04] blur-[160px] rounded-full -z-10"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] backdrop-blur-md mb-8 animate-on-scroll">
+                <iconify-icon icon="solar:bookmark-linear" width="14" class="text-[#C9A646]"></iconify-icon>
+                <span class="text-xs uppercase tracking-[0.25em] text-neutral-300">About Legacy Bridge</span>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white leading-[1.05] mb-8 font-[Playfair_Display] animate-on-scroll" style="transition-delay: 100ms;">
+                Preserving Voices,<br>
+                <span class="italic text-[#C9A646]">Creating Timeless Impact.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-neutral-400 font-light leading-relaxed max-w-3xl mx-auto animate-on-scroll" style="transition-delay: 200ms;">
+                A boutique African publishing house preserving the stories of leaders, founders, and visionaries whose words deserve to outlive them.
+            </p>
+
+            <!-- In-page nav -->
+            <div class="flex flex-wrap justify-center items-center gap-3 mt-12 animate-on-scroll" style="transition-delay: 300ms;">
+                <a href="#philosophy" class="px-5 py-2.5 rounded-full border border-white/10 text-xs uppercase tracking-widest text-neutral-300 hover:text-[#C9A646] hover:border-[#C9A646]/40 transition-colors">Philosophy</a>
+                <a href="#founder" class="px-5 py-2.5 rounded-full border border-white/10 text-xs uppercase tracking-widest text-neutral-300 hover:text-[#C9A646] hover:border-[#C9A646]/40 transition-colors">Founder</a>
+                <a href="#pillars" class="px-5 py-2.5 rounded-full border border-white/10 text-xs uppercase tracking-widest text-neutral-300 hover:text-[#C9A646] hover:border-[#C9A646]/40 transition-colors">Pillars</a>
+                <a href="#council" class="px-5 py-2.5 rounded-full border border-white/10 text-xs uppercase tracking-widest text-neutral-300 hover:text-[#C9A646] hover:border-[#C9A646]/40 transition-colors">Advisory Council</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Philosophy -->
+    <section id="philosophy" class="py-24 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-4 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">01 — Foundation</span>
+                <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 leading-tight font-[Playfair_Display]">Our <span class="italic text-[#C9A646]">Philosophy</span></h2>
+                <div class="gold-divider w-24 mt-6"></div>
+                <p class="text-[#C9A646] mt-6 text-sm font-medium tracking-wide italic font-[Cormorant_Garamond] text-lg">"Our approach is deliberate, refined, and uncompromising."</p>
+            </div>
+            <div class="lg:col-span-8 animate-on-scroll" style="transition-delay: 150ms;">
+                <div class="space-y-6 text-[15px] leading-relaxed text-neutral-300">
+                    <p>
+                        Legacy Bridge Publishing is not for everyone. We exist for those whose words carry weight beyond today.
+                    </p>
+                    <p>
+                        We work exclusively with visionaries, leaders, and distinguished voices who understand that their words carry the weight of influence. For every client, our work is a covenant — a promise to preserve their story with dignity, precision, and excellence.
+                    </p>
+                    <p>
+                        We believe publishing is not a commodity; it is an art of stewardship. Through intentional craftsmanship and discretion, we turn ideas into influence, and influence into heritage.
+                    </p>
+                    <blockquote class="border-l-2 border-[#C9A646] pl-6 my-8 text-xl md:text-2xl italic text-white font-[Cormorant_Garamond]">
+                        Legacy is not written by chance — it is curated with purpose.
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Founder -->
+    <section id="founder" class="py-24 bg-black border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">02 — Vision</span>
+                <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 font-[Playfair_Display]">Meet Our <span class="italic text-[#C9A646]">Founder</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Founder portrait -->
+                <div class="lg:col-span-5 animate-on-scroll">
+                    <div class="relative aspect-[4/5] max-w-md mx-auto">
+                        <!-- Outer frame -->
+                        <div class="absolute inset-0 rounded-2xl border border-[#C9A646]/30 overflow-hidden shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)]">
+                            <img src="assets/team/esther-dumbiri.jpg" alt="Esther Dumbiri — Founder, Legacy Bridge Publishing" class="w-full h-full object-cover">
+                            <!-- Subtle navy/gold tint to brand-align the photo -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0A1F44]/70 via-[#0A1F44]/10 to-transparent pointer-events-none"></div>
+                            <!-- Decorative corner ornaments -->
+                            <div class="absolute top-4 left-4 w-10 h-10 border-t border-l border-[#C9A646]/60 pointer-events-none"></div>
+                            <div class="absolute top-4 right-4 w-10 h-10 border-t border-r border-[#C9A646]/60 pointer-events-none"></div>
+                            <div class="absolute bottom-4 left-4 w-10 h-10 border-b border-l border-[#C9A646]/60 pointer-events-none"></div>
+                            <div class="absolute bottom-4 right-4 w-10 h-10 border-b border-r border-[#C9A646]/60 pointer-events-none"></div>
+                            <!-- Caption strip -->
+                            <div class="absolute bottom-6 left-0 right-0 text-center pointer-events-none">
+                                <p class="text-xs uppercase tracking-[0.35em] text-white drop-shadow">Esther Dumbiri</p>
+                                <p class="text-[11px] text-[#E5C158] mt-1.5 italic font-[Cormorant_Garamond]">Founder &amp; Visionary</p>
+                            </div>
+                        </div>
+                        <!-- Soft gold glow behind frame -->
+                        <div class="absolute -inset-6 -z-10 bg-[#C9A646] opacity-[0.07] blur-3xl rounded-full"></div>
+                    </div>
+                </div>
+
+                <!-- Bio -->
+                <div class="lg:col-span-7 animate-on-scroll" style="transition-delay: 150ms;">
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646] mb-2">Founder · Visionary</p>
+                    <h3 class="text-3xl md:text-4xl font-semibold text-white mb-6 font-[Playfair_Display]">Esther Dumbiri</h3>
+
+                    <div class="space-y-5 text-[15px] leading-relaxed text-neutral-300">
+                        <p>
+                            Visionary builder with a decade of experience in strategic HR, talent development, and organizational architecture. Her mission centers on ensuring brilliance doesn't die with individuals.
+                        </p>
+                        <p>
+                            She has worked across multiple industries helping founders and leaders create frameworks, structures, and systems that outlive personal presence. Esther believes that ideas are fragile until documented, words are vulnerable until preserved, and stories are wasted if they remain trapped in memory.
+                        </p>
+                        <p>
+                            Through Legacy Bridge, she champions authors, thought leaders, and builders to transform their insights into timeless books — not just for commercial success, but for generational impact.
+                        </p>
+                    </div>
+
+                    <blockquote class="border-l-2 border-[#C9A646] pl-6 mt-10 text-lg md:text-xl italic text-white font-[Cormorant_Garamond] leading-relaxed">
+                        "Extract wisdom. Preserve it. Multiply it. So future generations don't just hear what you said — they can study what you knew."
+                        <footer class="not-italic text-[11px] uppercase tracking-[0.3em] text-[#C9A646] mt-4 font-[Inter]">— Esther Dumbiri</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Pillars -->
+    <section id="pillars" class="py-24 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">03 — Values</span>
+                <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 font-[Playfair_Display]">Our <span class="italic text-[#C9A646]">Pillars</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-neutral-400 leading-relaxed">
+                    Four convictions that govern how we choose, edit, package, and protect every piece of work that carries our imprint.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pillar 1: Legacy -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-black/30 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#C9A646] group-hover:border-[#C9A646]/50 transition-colors">
+                        <iconify-icon icon="solar:crown-line-linear" width="22"></iconify-icon>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Pillar 01</span>
+                    <h3 class="text-xl font-semibold text-white mt-2 mb-3 font-[Playfair_Display]">Legacy</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        We don't chase visibility — we craft permanence. Every book is built to be kept, cited, and inherited.
+                    </p>
+                </div>
+
+                <!-- Pillar 2: Authority -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-black/30 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#C9A646] group-hover:border-[#C9A646]/50 transition-colors">
+                        <iconify-icon icon="solar:shield-check-linear" width="22"></iconify-icon>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Pillar 02</span>
+                    <h3 class="text-xl font-semibold text-white mt-2 mb-3 font-[Playfair_Display]">Authority</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        We position our authors as the definitive voice in their field — not louder, but more credible, more cited, more enduring.
+                    </p>
+                </div>
+
+                <!-- Pillar 3: Permanence -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-black/30 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 300ms;">
+                    <div class="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#C9A646] group-hover:border-[#C9A646]/50 transition-colors">
+                        <iconify-icon icon="solar:medal-ribbons-star-linear" width="22"></iconify-icon>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Pillar 03</span>
+                    <h3 class="text-xl font-semibold text-white mt-2 mb-3 font-[Playfair_Display]">Permanence</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Editorial, design, and production at heritage standard. Built to outlive trends — and the author themselves.
+                    </p>
+                </div>
+
+                <!-- Pillar 4: Cultural Preservation -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-black/30 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 400ms;">
+                    <div class="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#C9A646] group-hover:border-[#C9A646]/50 transition-colors">
+                        <iconify-icon icon="solar:globus-linear" width="22"></iconify-icon>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Pillar 04</span>
+                    <h3 class="text-xl font-semibold text-white mt-2 mb-3 font-[Playfair_Display]">Cultural Preservation</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        We document the wisdom of Africa's brightest minds so it can travel — across borders, across generations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisory Council -->
+    <section id="council" class="py-24 bg-black border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">04 — Stewardship</span>
+                <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 font-[Playfair_Display]">Advisory <span class="italic text-[#C9A646]">Council</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-neutral-400 leading-relaxed">
+                    Distinguished leaders across finance, energy, technology, and strategy — guarding the standard of every project that carries our imprint.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Member 1 -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="flex items-start gap-4 mb-5">
+                        <div class="monogram shrink-0 w-14 h-14 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-xl">AO</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white font-[Playfair_Display] leading-tight">Engr. Afolabi Oladele</h3>
+                            <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider">Director · Addax Petroleum</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        25 years in Oil &amp; Gas and 22 years in private equity with African Capital Alliance. Former NNPC Group Executive Director for Downstream Operations. Sits on boards of Nigerian and international companies in energy, engineering, and financial services.
+                    </p>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 150ms;">
+                    <div class="flex items-start gap-4 mb-5">
+                        <div class="monogram shrink-0 w-14 h-14 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-xl">NA</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white font-[Playfair_Display] leading-tight">Mr Noel Abdullahi</h3>
+                            <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider">Founder · Disc Consult</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Director at Businessfront Inc. and founder of Disc Consult, building AI solutions for mid-sized companies. Geoscientist with 20+ years at Chevron. Led DSN's SpotOn team to Cisco Global Problem Solver Challenge 2021 top 100. Founder of the Navigating with Noel NGO for youth empowerment.
+                    </p>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="flex items-start gap-4 mb-5">
+                        <div class="monogram shrink-0 w-14 h-14 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-xl">AO</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white font-[Playfair_Display] leading-tight">Abobade Olajide <span class="text-[#C9A646] text-sm">FCA</span></h3>
+                            <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider">CFO · DHL Express</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Chartered Accountant and Computer Science graduate with 20+ years bridging finance and technology. Expertise in financial control, ERP implementation, and digital transformation across West African markets. Mentors teams on IFRS compliance and regulatory excellence.
+                    </p>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 250ms;">
+                    <div class="flex items-start gap-4 mb-5">
+                        <div class="monogram shrink-0 w-14 h-14 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-xl">AA</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white font-[Playfair_Display] leading-tight">Adeolu Akinyemi</h3>
+                            <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider">Founder · New Nigeria Club</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Leadership and strategy consultant specializing in organizational design, institutional capacity building, and human capital development. Founder of Coach B &amp; Stewards. Works with senior leaders and reform-oriented institutions on system design and leadership effectiveness.
+                    </p>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 300ms;">
+                    <div class="flex items-start gap-4 mb-5">
+                        <div class="monogram shrink-0 w-14 h-14 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-xl">GO</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white font-[Playfair_Display] leading-tight">OluwaGbemileke Oscar Oyinsan</h3>
+                            <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider">CFO · Media Executive</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Senior finance leader and media executive bridging editorial vision with operational discipline. Advises on commercial strategy, distribution architecture, and the long-term monetisation of intellectual property assets across African and diaspora markets.
+                    </p>
+                </div>
+
+                <!-- Joining card -->
+                <div class="group relative p-8 rounded-2xl border border-dashed border-[#C9A646]/30 bg-gradient-to-br from-[#C9A646]/5 via-transparent to-transparent flex flex-col items-start justify-center animate-on-scroll" style="transition-delay: 350ms;">
+                    <iconify-icon icon="solar:add-circle-linear" width="32" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-lg font-semibold text-white mb-2 font-[Playfair_Display]">By Invitation</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-4">
+                        Our Council grows by invitation only — extended to leaders whose stewardship raises the standard of African intellectual heritage.
+                    </p>
+                    <a href="mailto:hello@legacybridgepublishing.com" class="text-xs uppercase tracking-widest text-[#C9A646] hover:text-white transition-colors flex items-center gap-2">
+                        Nominate a leader
+                        <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-[#0A1F44] border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#C9A646] opacity-[0.04] blur-[150px] rounded-full pointer-events-none"></div>
+        <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-semibold text-white mb-6 font-[Playfair_Display] leading-tight animate-on-scroll">
+                Your voice deserves to <span class="italic text-[#C9A646]">outlive you.</span>
+            </h2>
+            <p class="text-neutral-400 leading-relaxed mb-10 max-w-xl mx-auto animate-on-scroll" style="transition-delay: 100ms;">
+                Begin a conversation with our team. Every project starts with a private consultation — no pitch, no template, just discernment.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 animate-on-scroll" style="transition-delay: 200ms;">
+                <a href="contact.html" class="shiny-cta">
+                    <span>Start Your Legacy Journey</span>
+                    <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                </a>
+                <a href="pathways.html" class="btn-secondary">
+                    <span>Explore Pathways</span>
+                    <iconify-icon icon="solar:alt-arrow-right-linear" width="14"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 px-6 py-10 z-20 relative">
+        <div class="max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <nav class="flex flex-wrap justify-center gap-8 text-[11px] font-bold uppercase tracking-widest text-neutral-500">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="about.html" class="hover:text-white transition-colors">About</a>
+                <a href="pathways.html" class="hover:text-white transition-colors">Pathways</a>
+                <a href="authors.html" class="hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="hover:text-white transition-colors">Media &amp; Press</a>
+                <a href="faqs.html" class="hover:text-white transition-colors">FAQs</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <div class="text-[11px] text-neutral-600 tracking-wide font-medium text-center md:text-right">
+                © 2026 Legacy Bridge Publishing. All rights reserved.<br>
+                <span class="text-neutral-500 italic">Crafted for distinguished voices seeking lasting impact.</span>
+            </div>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" });
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+
+    const mobileToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+        mobileMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+        });
+    }
+});
+</script>
+
+</body></html>

@@ -1,0 +1,596 @@
+<html lang="en" class="scroll-smooth"><head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pathways | Legacy Bridge Publishing</title>
+<link rel="icon" type="image/png" href="assets/logos/LBP icon gold.png">
+<link rel="apple-touch-icon" href="assets/logos/LBP icon gold.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;500;600;700;900&amp;family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root { --gold-primary: #C9A646; --gold-light: #E5C158; --gold-dim: #7A6428; }
+body { background-color: #0A1F44; color: #e5e5e5; font-family: 'Inter', sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Space Grotesk', sans-serif; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #06142D; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-primary); }
+@keyframes animationIn {
+0% { opacity: 0; transform: translate3d(0, 30px, 0); filter: blur(8px); }
+100% { opacity: 1; transform: translate3d(0, 0, 0); filter: blur(0px); }
+}
+.animate-on-scroll { opacity: 0; will-change: transform, opacity, filter; }
+.animate-on-scroll.animate { animation: animationIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+.shiny-cta {
+position: relative; padding: 0.75rem 2rem; font-size: 0.875rem; font-weight: 500;
+color: #ffffff; background-color: #0A0A0A; border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 9999px; overflow: hidden; transition: all 0.4s ease; cursor: pointer;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1;
+display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.shiny-cta:hover { border-color: rgba(201, 166, 70, 0.4); box-shadow: 0 0 15px rgba(201, 166, 70, 0.15); transform: translateY(-1px); }
+.btn-secondary {
+position: relative; padding: 0.75rem 2rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 500;
+color: #a3a3a3; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.08); color: white; border-color: rgba(255,255,255,0.15); }
+.perspective-grid {
+background-size: 50px 50px;
+background-image:
+linear-gradient(to right, rgba(201, 166, 70, 0.05) 1px, transparent 1px),
+linear-gradient(to bottom, rgba(201, 166, 70, 0.05) 1px, transparent 1px);
+mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+-webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+pointer-events: none;
+}
+section { scroll-margin-top: 96px; }
+.gold-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(201,166,70,0.5), transparent); }
+.pathway-numeral {
+font-family: 'Playfair Display', serif;
+font-style: italic;
+background: linear-gradient(135deg, #C9A646 0%, #E5C158 50%, #7A6428 100%);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+line-height: 1;
+}
+</style>
+</head>
+<body class="selection:bg-[#C9A646] selection:text-black antialiased bg-black">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center group shrink-0">
+                <img src="assets/logos/LBP Horizontal.png" alt="Legacy Bridge Publishing" class="h-11 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-[13px]">
+                <a href="index.html" class="text-neutral-400 hover:text-white transition-colors">Home</a>
+
+                <div class="relative group">
+                    <a href="about.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-1">
+                        About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-56 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="about.html#philosophy" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Philosophy</a>
+                            <a href="about.html#founder" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Founder</a>
+                            <a href="about.html#pillars" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Pillars</a>
+                            <a href="about.html#council" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Advisory Council</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <a href="pathways.html" class="text-[#C9A646] hover:text-white transition-colors flex items-center gap-1">
+                        Pathways
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-64 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="pathways.html#sovereign" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Sovereign Pathway</a>
+                            <a href="pathways.html#partnership" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Partnership Pathway</a>
+                            <a href="pathways.html#institutional" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">The Institutional Pathway</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="faqs.html" class="text-neutral-400 hover:text-white transition-colors">FAQs</a>
+                <a href="authors.html" class="text-neutral-400 hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="text-neutral-400 hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="text-neutral-400 hover:text-white transition-colors whitespace-nowrap">Media &amp; Press</a>
+                <a href="contact.html" class="text-neutral-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="tel:+2348118194036" class="hidden sm:flex items-center gap-2 text-[13px] text-neutral-300 hover:text-[#C9A646] transition-colors group">
+                    <span class="w-9 h-9 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] group-hover:bg-[#C9A646]/10 transition-colors">
+                        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>
+                    </span>
+                    <span class="hidden xl:inline whitespace-nowrap font-medium tracking-tight">+234 8118194036</span>
+                </a>
+                <button id="mobile-menu-toggle" aria-label="Open menu" class="lg:hidden w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-neutral-300 hover:text-white hover:border-white/30 transition-colors">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="20"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden hidden border-t border-white/5 bg-[#0A1F44]/95 backdrop-blur-xl">
+            <div class="px-6 py-4 flex flex-col gap-1 text-sm">
+                <a href="index.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Home</a>
+                <details class="group">
+                    <summary class="py-2.5 text-neutral-300 hover:text-[#C9A646] cursor-pointer flex items-center justify-between list-none">About Us<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="about.html#philosophy" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Philosophy</a>
+                        <a href="about.html#founder" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Founder</a>
+                        <a href="about.html#pillars" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Pillars</a>
+                        <a href="about.html#council" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Advisory Council</a>
+                    </div>
+                </details>
+                <details class="group" open>
+                    <summary class="py-2.5 text-[#C9A646] cursor-pointer flex items-center justify-between list-none">Pathways<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="#sovereign" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Sovereign Pathway</a>
+                        <a href="#partnership" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Partnership Pathway</a>
+                        <a href="#institutional" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">The Institutional Pathway</a>
+                    </div>
+                </details>
+                <a href="faqs.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">FAQs</a>
+                <a href="authors.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Authors</a>
+                <a href="legacy-studies.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Legacy Studies</a>
+                <a href="media-press.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Media &amp; Press</a>
+                <a href="contact.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Contact</a>
+                <a href="tel:+2348118194036" class="mt-3 py-3 px-4 rounded-lg border border-[#C9A646]/40 text-[#C9A646] flex items-center gap-2"><iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>+234 8118194036</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 perspective-grid -z-20"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C9A646] opacity-[0.05] blur-[160px] rounded-full -z-10"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] backdrop-blur-md mb-8 animate-on-scroll">
+                <iconify-icon icon="solar:routing-3-linear" width="14" class="text-[#C9A646]"></iconify-icon>
+                <span class="text-xs uppercase tracking-[0.25em] text-neutral-300">Three Pathways · One Standard</span>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white leading-[1.05] mb-8 font-[Playfair_Display] animate-on-scroll" style="transition-delay: 100ms;">
+                Authors don't buy<br>
+                publishing services.<br>
+                <span class="italic text-[#C9A646]">They enter a label.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-neutral-400 font-light leading-relaxed max-w-3xl mx-auto animate-on-scroll" style="transition-delay: 200ms;">
+                At Legacy Bridge, every author enters a label structure based on how their idea will be funded, owned, and grown. There are three pathways inside the label — each exists for a reason, and each strives to protect the value of the ideas within it.
+            </p>
+
+            <p class="mt-6 text-[#C9A646] italic text-base font-[Cormorant_Garamond] animate-on-scroll" style="transition-delay: 250ms;">
+                Like music — not all artists get the same deal. The deal follows the asset.
+            </p>
+
+            <div class="flex flex-wrap justify-center items-center gap-3 mt-12 animate-on-scroll" style="transition-delay: 300ms;">
+                <a href="#sovereign" class="px-5 py-2.5 rounded-full border border-white/10 text-xs uppercase tracking-widest text-neutral-300 hover:text-[#C9A646] hover:border-[#C9A646]/40 transition-colors">01 · Sovereign</a>
+                <a href="#partnership" class="px-5 py-2.5 rounded-full border border-[#C9A646]/40 text-xs uppercase tracking-widest text-[#C9A646] hover:bg-[#C9A646]/10 transition-colors">02 · Partnership</a>
+                <a href="#institutional" class="px-5 py-2.5 rounded-full border border-white/10 text-xs uppercase tracking-widest text-neutral-300 hover:text-[#C9A646] hover:border-[#C9A646]/40 transition-colors">03 · Institutional</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selection Criteria -->
+    <section class="py-20 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">How Authors Are Placed</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 font-[Playfair_Display]">Every author enters based on <span class="italic text-[#C9A646]">four factors</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 rounded-xl border border-white/5 bg-black/30 animate-on-scroll" style="transition-delay: 100ms;">
+                    <iconify-icon icon="solar:medal-ribbons-star-linear" width="28" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm font-semibold text-white font-[Playfair_Display] mb-2">Authority Level</h3>
+                    <p class="text-[11px] text-neutral-500 leading-relaxed">Track record, recognition, and the weight of the voice.</p>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-white/5 bg-black/30 animate-on-scroll" style="transition-delay: 200ms;">
+                    <iconify-icon icon="solar:wallet-money-linear" width="28" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm font-semibold text-white font-[Playfair_Display] mb-2">Funding Capacity</h3>
+                    <p class="text-[11px] text-neutral-500 leading-relaxed">How the project will be capitalised and sustained.</p>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-white/5 bg-black/30 animate-on-scroll" style="transition-delay: 300ms;">
+                    <iconify-icon icon="solar:crown-line-linear" width="28" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm font-semibold text-white font-[Playfair_Display] mb-2">Desired Control</h3>
+                    <p class="text-[11px] text-neutral-500 leading-relaxed">Ownership posture, rights, and editorial discretion.</p>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-white/5 bg-black/30 animate-on-scroll" style="transition-delay: 400ms;">
+                    <iconify-icon icon="solar:graph-up-linear" width="28" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm font-semibold text-white font-[Playfair_Display] mb-2">Ecosystem Potential</h3>
+                    <p class="text-[11px] text-neutral-500 leading-relaxed">How far the IP can travel — book, course, institution, legacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 01 · SOVEREIGN PATHWAY -->
+    <!-- ============================================ -->
+    <section id="sovereign" class="py-24 bg-black border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C9A646] opacity-[0.04] blur-[140px] rounded-full -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+                <div class="lg:col-span-5 animate-on-scroll">
+                    <div class="pathway-numeral text-[8rem] md:text-[12rem] font-bold mb-2">01</div>
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Sovereign Pathway</span>
+                    <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 leading-tight font-[Playfair_Display]">The Author's <span class="italic text-[#C9A646]">First Impact.</span></h2>
+                    <div class="gold-divider w-24 mt-6"></div>
+                    <p class="text-[#C9A646] italic mt-6 text-lg font-[Cormorant_Garamond]">Author-Owned · Label-Guided</p>
+                </div>
+
+                <div class="lg:col-span-7 animate-on-scroll" style="transition-delay: 150ms;">
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#C9A646] mb-3">Positioning</p>
+                    <p class="text-2xl md:text-3xl text-white font-[Playfair_Display] leading-snug mb-6">
+                        This is the launchpad for thought leadership.
+                    </p>
+                    <div class="space-y-5 text-[15px] leading-relaxed text-neutral-300">
+                        <p>
+                            For professionals and specialists stepping into authorship for the first time — ready to share a message that matters. We turn your ideas into a structured, powerful book designed to establish your credibility, expand your influence, and open doors to new levels of authority.
+                        </p>
+                        <p class="text-neutral-400">
+                            You fund and retain primary ownership. Legacy Bridge serves as label, architect, and strategic operator. Rights are licensed only when necessary, typically time-bound.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sovereign details grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Best for -->
+                <div class="p-7 rounded-2xl border border-white/5 bg-[#0A1F44]/40 animate-on-scroll" style="transition-delay: 100ms;">
+                    <iconify-icon icon="solar:user-id-linear" width="22" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm uppercase tracking-widest text-white mb-4 font-[Playfair_Display]">Best For</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Established professionals, founders, and leaders who want full ownership — and understand the long-term value of their ideas.
+                    </p>
+                </div>
+
+                <!-- What's included -->
+                <div class="p-7 rounded-2xl border border-white/5 bg-[#0A1F44]/40 animate-on-scroll" style="transition-delay: 200ms;">
+                    <iconify-icon icon="solar:notebook-bookmark-linear" width="22" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm uppercase tracking-widest text-white mb-4 font-[Playfair_Display]">What's Included</h3>
+                    <ul class="text-sm text-neutral-400 space-y-2">
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Book preparation &amp; ghostwriting guidance</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Full editing, design &amp; production</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>eBook + Print distribution (Amazon, B&amp;N, indie)</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Author Visibility Kit</li>
+                    </ul>
+                </div>
+
+                <!-- Optimizes for -->
+                <div class="p-7 rounded-2xl border border-white/5 bg-[#0A1F44]/40 animate-on-scroll" style="transition-delay: 300ms;">
+                    <iconify-icon icon="solar:target-linear" width="22" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm uppercase tracking-widest text-white mb-4 font-[Playfair_Display]">Optimises For</h3>
+                    <ul class="text-sm text-neutral-400 space-y-2">
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Maximum author control</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Long-term leverage</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Strategic discretion</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Clean ownership</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 flex flex-wrap items-center gap-4 animate-on-scroll" style="transition-delay: 400ms;">
+                <a href="contact.html" class="shiny-cta">
+                    <span>Explore The Sovereign Pathway</span>
+                    <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                </a>
+                <a href="#partnership" class="text-xs uppercase tracking-widest text-neutral-400 hover:text-[#C9A646] transition-colors flex items-center gap-2 ml-2">
+                    Compare to Partnership
+                    <iconify-icon icon="solar:alt-arrow-down-linear" width="12"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 02 · PARTNERSHIP PATHWAY -->
+    <!-- ============================================ -->
+    <section id="partnership" class="py-24 bg-[#0A1F44] border-t border-white/5 relative overflow-hidden">
+        <div class="absolute inset-0 perspective-grid opacity-50 pointer-events-none -z-10"></div>
+        <div class="absolute top-1/3 left-0 w-[500px] h-[500px] bg-[#C9A646] opacity-[0.06] blur-[140px] rounded-full -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Featured banner -->
+            <div class="text-center mb-8 animate-on-scroll">
+                <span class="inline-block px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.3em] bg-[#C9A646]/15 text-[#C9A646] border border-[#C9A646]/30">Most Selected</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+                <div class="lg:col-span-5 animate-on-scroll">
+                    <div class="pathway-numeral text-[8rem] md:text-[12rem] font-bold mb-2">02</div>
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Partnership Pathway</span>
+                    <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 leading-tight font-[Playfair_Display]">Co-Invested. <span class="italic text-[#C9A646]">Co-Grown.</span></h2>
+                    <div class="gold-divider w-24 mt-6"></div>
+                    <p class="text-[#C9A646] italic mt-6 text-lg font-[Cormorant_Garamond]">Co-Invested · Co-Grown Authority</p>
+                </div>
+
+                <div class="lg:col-span-7 animate-on-scroll" style="transition-delay: 150ms;">
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#C9A646] mb-3">Positioning</p>
+                    <p class="text-2xl md:text-3xl text-white font-[Playfair_Display] leading-snug mb-6">
+                        This is not outsourced publishing. It is <span class="italic text-[#C9A646]">co-architected authority.</span>
+                    </p>
+                    <div class="space-y-5 text-[15px] leading-relaxed text-neutral-300">
+                        <p>
+                            Designed for leaders, founders, and creators whose ideas are ready to scale — but who recognise that meaningful influence is best built through strategic collaboration. We co-invest, co-design, and co-grow the work, with clarity and alignment from the very first conversation.
+                        </p>
+                        <p class="text-neutral-400">
+                            Ownership and licensing structures are transparent and defined from the outset. Rights may be licensed or co-developed with documented reversion frameworks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partnership details grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-7 rounded-2xl border border-[#C9A646]/20 bg-black/40 animate-on-scroll" style="transition-delay: 100ms;">
+                    <iconify-icon icon="solar:users-group-rounded-linear" width="22" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm uppercase tracking-widest text-white mb-4 font-[Playfair_Display]">Best For</h3>
+                    <ul class="text-sm text-neutral-400 space-y-2">
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Established expertise &amp; cultural relevance</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Building platforms beyond a single book</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Open to shared investment</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Believe authority compounds through collaboration</li>
+                    </ul>
+                </div>
+
+                <div class="p-7 rounded-2xl border border-[#C9A646]/20 bg-black/40 animate-on-scroll" style="transition-delay: 200ms;">
+                    <iconify-icon icon="solar:layers-linear" width="22" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm uppercase tracking-widest text-white mb-4 font-[Playfair_Display]">Label Provides</h3>
+                    <ul class="text-sm text-neutral-400 space-y-2">
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Deep idea and narrative architecture</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Editorial development &amp; premium production</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Strategic publishing &amp; controlled distribution</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Platform &amp; ecosystem planning</li>
+                    </ul>
+                </div>
+
+                <div class="p-7 rounded-2xl border border-[#C9A646]/20 bg-black/40 animate-on-scroll" style="transition-delay: 300ms;">
+                    <iconify-icon icon="solar:scale-linear" width="22" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm uppercase tracking-widest text-white mb-4 font-[Playfair_Display]">Optimises For</h3>
+                    <ul class="text-sm text-neutral-400 space-y-2">
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Strategic partnership</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Sustainable authority growth</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Shared upside &amp; aligned incentives</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Long-term IP expansion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 flex flex-wrap items-center gap-4 animate-on-scroll" style="transition-delay: 400ms;">
+                <a href="contact.html" class="shiny-cta">
+                    <span>Discover The Partnership Pathway</span>
+                    <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                </a>
+                <a href="#institutional" class="text-xs uppercase tracking-widest text-neutral-400 hover:text-[#C9A646] transition-colors flex items-center gap-2 ml-2">
+                    Compare to Institutional
+                    <iconify-icon icon="solar:alt-arrow-down-linear" width="12"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 03 · INSTITUTIONAL PATHWAY -->
+    <!-- ============================================ -->
+    <section id="institutional" class="py-24 bg-black border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-1/2 right-0 w-[600px] h-[600px] bg-[#C9A646] opacity-[0.05] blur-[150px] rounded-full -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-8 animate-on-scroll">
+                <span class="inline-block px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.3em] bg-white/[0.03] text-neutral-300 border border-white/10">By Selection Only</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+                <div class="lg:col-span-5 animate-on-scroll">
+                    <div class="pathway-numeral text-[8rem] md:text-[12rem] font-bold mb-2">03</div>
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Institutional Pathway</span>
+                    <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 leading-tight font-[Playfair_Display]">Built as <span class="italic text-[#C9A646]">long-horizon</span><br>intellectual assets.</h2>
+                    <div class="gold-divider w-24 mt-6"></div>
+                    <p class="text-[#C9A646] italic mt-6 text-lg font-[Cormorant_Garamond]">Institutionally Funded · Strategically Managed</p>
+                </div>
+
+                <div class="lg:col-span-7 animate-on-scroll" style="transition-delay: 150ms;">
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#C9A646] mb-3">Positioning</p>
+                    <p class="text-2xl md:text-3xl text-white font-[Playfair_Display] leading-snug mb-6">
+                        The label carries the weight, so your ideas can travel further.
+                    </p>
+                    <div class="space-y-5 text-[15px] leading-relaxed text-neutral-300">
+                        <p>
+                            For senior leaders, policymakers, cultural voices, and high-impact founders whose ideas carry national, regional, or industry-wide relevance. The label provides funding, infrastructure, and long-term stewardship — allowing the author to focus primarily on intellectual leadership while the ecosystem around the work is professionally managed.
+                        </p>
+                        <p class="text-neutral-400">
+                            Projects in this pathway are built as long-horizon intellectual assets, not seasonal releases. Entry is selective and based on strategic alignment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Institutional details grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-7 rounded-2xl border border-white/5 bg-[#0A1F44]/40 animate-on-scroll" style="transition-delay: 100ms;">
+                    <iconify-icon icon="solar:buildings-3-linear" width="22" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm uppercase tracking-widest text-white mb-4 font-[Playfair_Display]">Best For</h3>
+                    <ul class="text-sm text-neutral-400 space-y-2">
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Senior leaders, policymakers, cultural voices</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>National or industry-wide relevance</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Infrastructure-led scale, not operational lift</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Educational or global positioning potential</li>
+                    </ul>
+                </div>
+
+                <div class="p-7 rounded-2xl border border-white/5 bg-[#0A1F44]/40 animate-on-scroll" style="transition-delay: 200ms;">
+                    <iconify-icon icon="solar:server-square-linear" width="22" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm uppercase tracking-widest text-white mb-4 font-[Playfair_Display]">Label Provides</h3>
+                    <ul class="text-sm text-neutral-400 space-y-2">
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Institutional-grade idea architecture</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Full editorial, design &amp; production funding</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Multi-format IP development</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Strategic distribution &amp; institutional access</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Long-term catalogue stewardship</li>
+                    </ul>
+                </div>
+
+                <div class="p-7 rounded-2xl border border-white/5 bg-[#0A1F44]/40 animate-on-scroll" style="transition-delay: 300ms;">
+                    <iconify-icon icon="solar:rocket-2-linear" width="22" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm uppercase tracking-widest text-white mb-4 font-[Playfair_Display]">Optimises For</h3>
+                    <ul class="text-sm text-neutral-400 space-y-2">
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Speed to relevance</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Reduced author burden</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Scalable IP architecture</li>
+                        <li class="flex gap-2"><span class="text-[#C9A646] mt-0.5">·</span>Shared long-term upside</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 flex flex-wrap items-center gap-4 animate-on-scroll" style="transition-delay: 400ms;">
+                <a href="contact.html" class="shiny-cta">
+                    <span>Discuss The Institutional Pathway</span>
+                    <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                </a>
+                <span class="text-xs uppercase tracking-widest text-neutral-500 ml-2">Selective · By alignment</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison summary -->
+    <section class="py-24 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">At a Glance</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 font-[Playfair_Display]">Three pathways. <span class="italic text-[#C9A646]">One standard.</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <div class="overflow-x-auto rounded-2xl border border-white/10 bg-black/40 animate-on-scroll">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b border-white/10 text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+                            <th class="text-left p-5 font-medium"></th>
+                            <th class="text-left p-5 font-medium">01 · Sovereign</th>
+                            <th class="text-left p-5 font-medium text-[#C9A646]">02 · Partnership</th>
+                            <th class="text-left p-5 font-medium">03 · Institutional</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5 text-neutral-300">
+                        <tr>
+                            <td class="p-5 text-xs uppercase tracking-widest text-neutral-500">Funding</td>
+                            <td class="p-5">Author-funded</td>
+                            <td class="p-5">Co-invested</td>
+                            <td class="p-5">Label-funded</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5 text-xs uppercase tracking-widest text-neutral-500">Ownership</td>
+                            <td class="p-5">Author retains</td>
+                            <td class="p-5">Shared / co-developed</td>
+                            <td class="p-5">Shared rights &amp; revenue</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5 text-xs uppercase tracking-widest text-neutral-500">Author lift</td>
+                            <td class="p-5">High control · Active role</td>
+                            <td class="p-5">Balanced · Co-decision</td>
+                            <td class="p-5">Low operational · High intellectual</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5 text-xs uppercase tracking-widest text-neutral-500">Best for</td>
+                            <td class="p-5">First-time, established voices</td>
+                            <td class="p-5">Platform builders</td>
+                            <td class="p-5">Industry-defining ideas</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5 text-xs uppercase tracking-widest text-neutral-500">Entry</td>
+                            <td class="p-5">Open application</td>
+                            <td class="p-5">Curated · Aligned</td>
+                            <td class="p-5">Selective · By invitation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-black border-t border-white/5 relative overflow-hidden">
+        <div class="absolute inset-0 perspective-grid opacity-50 -z-10"></div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C9A646] opacity-[0.05] blur-[160px] rounded-full pointer-events-none -z-10"></div>
+
+        <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-semibold text-white mb-6 font-[Playfair_Display] leading-tight animate-on-scroll">
+                Not sure which pathway <span class="italic text-[#C9A646]">fits your work?</span>
+            </h2>
+            <p class="text-neutral-400 leading-relaxed mb-10 max-w-xl mx-auto animate-on-scroll" style="transition-delay: 100ms;">
+                Every project starts with a private consultation. We listen first, then place you in the structure that protects the value of your idea.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 animate-on-scroll" style="transition-delay: 200ms;">
+                <a href="contact.html" class="shiny-cta">
+                    <span>Begin a Consultation</span>
+                    <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                </a>
+                <a href="faqs.html" class="btn-secondary">
+                    <span>Read FAQs</span>
+                    <iconify-icon icon="solar:question-circle-linear" width="14"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 px-6 py-10 z-20 relative">
+        <div class="max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <nav class="flex flex-wrap justify-center gap-8 text-[11px] font-bold uppercase tracking-widest text-neutral-500">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="about.html" class="hover:text-white transition-colors">About</a>
+                <a href="pathways.html" class="hover:text-white transition-colors">Pathways</a>
+                <a href="authors.html" class="hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="hover:text-white transition-colors">Media &amp; Press</a>
+                <a href="faqs.html" class="hover:text-white transition-colors">FAQs</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <div class="text-[11px] text-neutral-600 tracking-wide font-medium text-center md:text-right">
+                © 2026 Legacy Bridge Publishing. All rights reserved.<br>
+                <span class="text-neutral-500 italic">Crafted for distinguished voices seeking lasting impact.</span>
+            </div>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" });
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+
+    const mobileToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+        mobileMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+        });
+    }
+});
+</script>
+
+</body></html>

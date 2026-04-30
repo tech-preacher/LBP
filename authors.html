@@ -1,0 +1,483 @@
+<html lang="en" class="scroll-smooth"><head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authors | Legacy Bridge Publishing</title>
+<link rel="icon" type="image/png" href="assets/logos/LBP icon gold.png">
+<link rel="apple-touch-icon" href="assets/logos/LBP icon gold.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;500;600;700;900&amp;family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root { --gold-primary: #C9A646; --gold-light: #E5C158; --gold-dim: #7A6428; }
+body { background-color: #0A1F44; color: #e5e5e5; font-family: 'Inter', sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Space Grotesk', sans-serif; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #06142D; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-primary); }
+@keyframes animationIn {
+0% { opacity: 0; transform: translate3d(0, 30px, 0); filter: blur(8px); }
+100% { opacity: 1; transform: translate3d(0, 0, 0); filter: blur(0px); }
+}
+.animate-on-scroll { opacity: 0; will-change: transform, opacity, filter; }
+.animate-on-scroll.animate { animation: animationIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+.shiny-cta {
+position: relative; padding: 0.75rem 2rem; font-size: 0.875rem; font-weight: 500;
+color: #ffffff; background-color: #0A0A0A; border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 9999px; overflow: hidden; transition: all 0.4s ease; cursor: pointer;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1;
+display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.shiny-cta:hover { border-color: rgba(201, 166, 70, 0.4); box-shadow: 0 0 15px rgba(201, 166, 70, 0.15); transform: translateY(-1px); }
+.btn-secondary {
+position: relative; padding: 0.75rem 2rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 500;
+color: #a3a3a3; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.08); color: white; border-color: rgba(255,255,255,0.15); }
+.perspective-grid {
+background-size: 50px 50px;
+background-image:
+linear-gradient(to right, rgba(201, 166, 70, 0.05) 1px, transparent 1px),
+linear-gradient(to bottom, rgba(201, 166, 70, 0.05) 1px, transparent 1px);
+mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+-webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+pointer-events: none;
+}
+section { scroll-margin-top: 96px; }
+.gold-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(201,166,70,0.5), transparent); }
+.monogram {
+background: radial-gradient(circle at 30% 30%, rgba(201,166,70,0.25), rgba(201,166,70,0.05) 70%);
+}
+/* Book spine */
+.book-spine {
+background: linear-gradient(180deg, #FAF7F0 0%, #EFEAD9 50%, #DDD5BE 100%);
+position: relative;
+overflow: hidden;
+}
+.book-spine::before {
+content: '';
+position: absolute; inset: 0;
+background-image: repeating-linear-gradient(180deg, rgba(0,0,0,0.04) 0 1px, transparent 1px 4px);
+pointer-events: none;
+}
+.book-spine::after {
+content: '';
+position: absolute; left: 8px; top: 8px; bottom: 8px; right: 8px;
+border: 1px solid rgba(201,166,70,0.3);
+border-radius: 2px;
+pointer-events: none;
+}
+.spine-title {
+font-family: 'Playfair Display', serif;
+color: #7A6428;
+text-align: center;
+writing-mode: vertical-rl;
+transform: rotate(180deg);
+letter-spacing: 0.15em;
+font-style: italic;
+font-weight: 600;
+}
+</style>
+</head>
+<body class="selection:bg-[#C9A646] selection:text-black antialiased bg-black">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center group shrink-0">
+                <img src="assets/logos/LBP Horizontal.png" alt="Legacy Bridge Publishing" class="h-11 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-[13px]">
+                <a href="index.html" class="text-neutral-400 hover:text-white transition-colors">Home</a>
+
+                <div class="relative group">
+                    <a href="about.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-1">
+                        About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-56 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="about.html#philosophy" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Philosophy</a>
+                            <a href="about.html#founder" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Founder</a>
+                            <a href="about.html#pillars" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Pillars</a>
+                            <a href="about.html#council" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Advisory Council</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <a href="pathways.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-1">
+                        Pathways
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-64 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="pathways.html#sovereign" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Sovereign Pathway</a>
+                            <a href="pathways.html#partnership" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Partnership Pathway</a>
+                            <a href="pathways.html#institutional" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">The Institutional Pathway</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="faqs.html" class="text-neutral-400 hover:text-white transition-colors">FAQs</a>
+                <a href="authors.html" class="text-[#C9A646] hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="text-neutral-400 hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="text-neutral-400 hover:text-white transition-colors whitespace-nowrap">Media &amp; Press</a>
+                <a href="contact.html" class="text-neutral-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="tel:+2348118194036" class="hidden sm:flex items-center gap-2 text-[13px] text-neutral-300 hover:text-[#C9A646] transition-colors group">
+                    <span class="w-9 h-9 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] group-hover:bg-[#C9A646]/10 transition-colors">
+                        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>
+                    </span>
+                    <span class="hidden xl:inline whitespace-nowrap font-medium tracking-tight">+234 8118194036</span>
+                </a>
+                <button id="mobile-menu-toggle" aria-label="Open menu" class="lg:hidden w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-neutral-300 hover:text-white hover:border-white/30 transition-colors">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="20"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden hidden border-t border-white/5 bg-[#0A1F44]/95 backdrop-blur-xl">
+            <div class="px-6 py-4 flex flex-col gap-1 text-sm">
+                <a href="index.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Home</a>
+                <details class="group">
+                    <summary class="py-2.5 text-neutral-300 hover:text-[#C9A646] cursor-pointer flex items-center justify-between list-none">About Us<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="about.html#philosophy" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Philosophy</a>
+                        <a href="about.html#founder" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Founder</a>
+                        <a href="about.html#pillars" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Pillars</a>
+                        <a href="about.html#council" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Advisory Council</a>
+                    </div>
+                </details>
+                <details class="group">
+                    <summary class="py-2.5 text-neutral-300 hover:text-[#C9A646] cursor-pointer flex items-center justify-between list-none">Pathways<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="pathways.html#sovereign" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Sovereign Pathway</a>
+                        <a href="pathways.html#partnership" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Partnership Pathway</a>
+                        <a href="pathways.html#institutional" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">The Institutional Pathway</a>
+                    </div>
+                </details>
+                <a href="faqs.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">FAQs</a>
+                <a href="authors.html" class="py-2.5 text-[#C9A646]">Authors</a>
+                <a href="legacy-studies.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Legacy Studies</a>
+                <a href="media-press.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Media &amp; Press</a>
+                <a href="contact.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Contact</a>
+                <a href="tel:+2348118194036" class="mt-3 py-3 px-4 rounded-lg border border-[#C9A646]/40 text-[#C9A646] flex items-center gap-2"><iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>+234 8118194036</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden">
+        <div class="absolute inset-0 perspective-grid -z-20"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C9A646] opacity-[0.05] blur-[160px] rounded-full -z-10"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] backdrop-blur-md mb-8 animate-on-scroll">
+                <iconify-icon icon="solar:notebook-bookmark-linear" width="14" class="text-[#C9A646]"></iconify-icon>
+                <span class="text-xs uppercase tracking-[0.25em] text-neutral-300">Our Roster</span>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white leading-[1.05] mb-8 font-[Playfair_Display] animate-on-scroll" style="transition-delay: 100ms;">
+                The voices we <span class="italic text-[#C9A646]">carry forward.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-neutral-400 font-light leading-relaxed max-w-3xl mx-auto animate-on-scroll" style="transition-delay: 200ms;">
+                Founders, leaders, cultural voices, and first-time authors whose work has been entrusted to our imprint — and built to outlive them.
+            </p>
+
+            <!-- Stats strip -->
+            <div class="grid grid-cols-3 max-w-2xl mx-auto mt-14 border-t border-b border-white/10 divide-x divide-white/10 animate-on-scroll" style="transition-delay: 300ms;">
+                <div class="py-6 text-center">
+                    <div class="text-3xl md:text-4xl font-semibold text-white font-[Playfair_Display]">500<span class="text-[#C9A646]">+</span></div>
+                    <div class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mt-2">Authors Worldwide</div>
+                </div>
+                <div class="py-6 text-center">
+                    <div class="text-3xl md:text-4xl font-semibold text-white font-[Playfair_Display]">20<span class="text-[#C9A646]">+</span></div>
+                    <div class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mt-2">Years Stewardship</div>
+                </div>
+                <div class="py-6 text-center">
+                    <div class="text-3xl md:text-4xl font-semibold text-white font-[Playfair_Display]">3<span class="text-[#C9A646]">×</span></div>
+                    <div class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mt-2">Continents</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who we publish -->
+    <section class="py-20 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-14 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Who We Publish</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 font-[Playfair_Display]">Distinguished voices, <span class="italic text-[#C9A646]">unhurried craft.</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <div class="text-center p-6 rounded-xl border border-white/5 bg-black/30 animate-on-scroll" style="transition-delay: 100ms;">
+                    <iconify-icon icon="solar:medal-ribbons-star-linear" width="28" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm font-semibold text-white font-[Playfair_Display]">Founders &amp; Builders</h3>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-white/5 bg-black/30 animate-on-scroll" style="transition-delay: 200ms;">
+                    <iconify-icon icon="solar:buildings-3-linear" width="28" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm font-semibold text-white font-[Playfair_Display]">Industry Leaders</h3>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-white/5 bg-black/30 animate-on-scroll" style="transition-delay: 300ms;">
+                    <iconify-icon icon="solar:globus-linear" width="28" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm font-semibold text-white font-[Playfair_Display]">Cultural Voices</h3>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-white/5 bg-black/30 animate-on-scroll" style="transition-delay: 400ms;">
+                    <iconify-icon icon="solar:lightbulb-bolt-linear" width="28" class="text-[#C9A646] mb-4"></iconify-icon>
+                    <h3 class="text-sm font-semibold text-white font-[Playfair_Display]">First-Time Authors</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Authors -->
+    <section class="py-24 bg-black border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Featured Authors</span>
+                <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 font-[Playfair_Display]">In their own <span class="italic text-[#C9A646]">words.</span></h2>
+                <div class="gold-divider w-24 mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Author 1: Femi Sowoolu (4 books) -->
+                <div class="group relative p-8 rounded-2xl border border-[#C9A646]/20 bg-gradient-to-br from-[#C9A646]/8 via-[#0A1F44]/30 to-transparent hover:border-[#C9A646]/40 transition-all duration-500 animate-on-scroll" style="transition-delay: 50ms;">
+                    <span class="absolute top-5 right-5 text-[10px] uppercase tracking-widest text-[#C9A646] border border-[#C9A646]/30 rounded-full px-3 py-1">4 Titles</span>
+                    <div class="monogram w-16 h-16 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-2xl mb-6">FS</div>
+                    <h3 class="text-xl font-semibold text-white font-[Playfair_Display] leading-tight">Femi Sowoolu</h3>
+                    <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider mb-5">Author · Storyteller</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
+                        Author of four published works under the Legacy Bridge imprint — fiction that weaves voice, memory, and reckoning into deeply personal narratives.
+                    </p>
+                    <div class="text-[11px] uppercase tracking-widest text-neutral-500 mb-3">Selected Works</div>
+                    <ul class="text-xs text-neutral-300 space-y-1.5 mb-6 italic font-[Cormorant_Garamond] text-sm">
+                        <li>· A Kiss Before We Die</li>
+                        <li>· Voices in My Head</li>
+                        <li>· Chatterbox</li>
+                        <li>· The Last Autumn</li>
+                    </ul>
+                    <blockquote class="border-l-2 border-[#C9A646] pl-4 text-xs italic text-neutral-300 leading-relaxed font-[Cormorant_Garamond] text-sm">
+                        "I worked with Esther's publishing company to produce my four most recent books — A Kiss Before We Die, Voices in My Head, Chatterbox, and The Last Autumn."
+                    </blockquote>
+                </div>
+
+                <!-- Author 2: Opeyemi Adesina -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="monogram w-16 h-16 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-2xl mb-6">OA</div>
+                    <h3 class="text-xl font-semibold text-white font-[Playfair_Display] leading-tight">Opeyemi Adesina</h3>
+                    <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider mb-5">Published Author</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
+                        A Legacy Bridge author whose first publishing journey was carried end-to-end by our editorial, design, and distribution teams.
+                    </p>
+                    <blockquote class="border-l-2 border-[#C9A646] pl-4 italic text-neutral-300 leading-relaxed font-[Cormorant_Garamond] text-sm">
+                        "Truly phenomenal to work with. Publishing with Legacy Bridge was like a breeze. I can't wait to work with them again."
+                    </blockquote>
+                </div>
+
+                <!-- Author 3: Femi Oluwafemi -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 150ms;">
+                    <div class="monogram w-16 h-16 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-2xl mb-6">FO</div>
+                    <h3 class="text-xl font-semibold text-white font-[Playfair_Display] leading-tight">Femi Oluwafemi</h3>
+                    <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider mb-5">Author · Columnist</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
+                        A long-form columnist whose newspaper essays were transformed under the Legacy Bridge imprint into a single, structured volume — collected, edited, and preserved.
+                    </p>
+                    <blockquote class="border-l-2 border-[#C9A646] pl-4 italic text-neutral-300 leading-relaxed font-[Cormorant_Garamond] text-sm">
+                        "I have known Esther for a while now — starting with a collection of newspaper articles I wanted to turn into a book. She did a wonderful job of it."
+                    </blockquote>
+                </div>
+
+                <!-- Author 4: Onyekachi Idowu -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="monogram w-16 h-16 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-2xl mb-6">OI</div>
+                    <h3 class="text-xl font-semibold text-white font-[Playfair_Display] leading-tight">Onyekachi Idowu</h3>
+                    <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider mb-5">First-Time Author</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
+                        Made the leap from idea to published author with structural mentorship from our team — a Sovereign Pathway journey.
+                    </p>
+                    <blockquote class="border-l-2 border-[#C9A646] pl-4 italic text-neutral-300 leading-relaxed font-[Cormorant_Garamond] text-sm">
+                        "Mrs Dumbiri brought her wealth of experience to bear, both professionally and with native intelligence. I value the insights I gained from her consultations."
+                    </blockquote>
+                </div>
+
+                <!-- Author 5: Gbemileke Oscar Oyinsan -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 250ms;">
+                    <div class="monogram w-16 h-16 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-2xl mb-6">GO</div>
+                    <h3 class="text-xl font-semibold text-white font-[Playfair_Display] leading-tight">OluwaGbemileke Oscar Oyinsan</h3>
+                    <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider mb-5">Industry Leader · CFO</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
+                        Senior finance leader and media executive whose work bridges editorial vision with operational discipline. Also a member of our <a href="about.html#council" class="text-[#C9A646] hover:underline">Advisory Council</a>.
+                    </p>
+                    <blockquote class="border-l-2 border-[#C9A646] pl-4 italic text-neutral-300 leading-relaxed font-[Cormorant_Garamond] text-sm">
+                        "She will disturb you to success! I love her work ethic and spirit. Like Pinky and the Brain — you can actually take over the world with her."
+                    </blockquote>
+                </div>
+
+                <!-- Author 6: Ayodele D Adebayo -->
+                <div class="group relative p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 300ms;">
+                    <div class="monogram w-16 h-16 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] font-[Playfair_Display] text-2xl mb-6">AA</div>
+                    <h3 class="text-xl font-semibold text-white font-[Playfair_Display] leading-tight">Ayodele D Adebayo</h3>
+                    <p class="text-xs text-[#C9A646] mt-1.5 uppercase tracking-wider mb-5">Strategic Partner</p>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
+                        Long-time collaborator with our editorial team on remote-first projects — a partnership-pathway voice committed to disciplined execution.
+                    </p>
+                    <blockquote class="border-l-2 border-[#C9A646] pl-4 italic text-neutral-300 leading-relaxed font-[Cormorant_Garamond] text-sm">
+                        "Esther is a woman of distinction — results-oriented, self-driven, and a pleasure to work with on every project."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spotlight: Featured Catalogue (Femi Sowoolu's books) -->
+    <section class="py-24 bg-[#0A1F44] border-t border-white/5 relative overflow-hidden">
+        <div class="absolute inset-0 perspective-grid opacity-50 pointer-events-none -z-10"></div>
+        <div class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#C9A646] opacity-[0.05] blur-[140px] rounded-full -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Catalogue Spotlight</span>
+                <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 font-[Playfair_Display]">From the <span class="italic text-[#C9A646]">imprint shelf.</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-neutral-400 leading-relaxed">
+                    A selection of works carried under the Legacy Bridge imprint — built to be kept, cited, and inherited. Below: four titles from Femi Sowoolu.
+                </p>
+            </div>
+
+            <!-- Book spines -->
+            <div class="flex flex-wrap justify-center items-end gap-3 md:gap-5 mb-12 animate-on-scroll">
+                <!-- Spine 1 -->
+                <div class="book-spine w-14 md:w-16 h-72 md:h-80 rounded-sm shadow-[0_20px_40px_-15px_rgba(0,0,0,0.8)] flex items-center justify-center group hover:-translate-y-2 transition-transform">
+                    <span class="spine-title text-[11px] md:text-xs">A Kiss Before We Die</span>
+                </div>
+                <!-- Spine 2 -->
+                <div class="book-spine w-14 md:w-16 h-80 md:h-[22rem] rounded-sm shadow-[0_20px_40px_-15px_rgba(0,0,0,0.8)] flex items-center justify-center group hover:-translate-y-2 transition-transform">
+                    <span class="spine-title text-[11px] md:text-xs">Voices in My Head</span>
+                </div>
+                <!-- Spine 3 -->
+                <div class="book-spine w-14 md:w-16 h-72 md:h-80 rounded-sm shadow-[0_20px_40px_-15px_rgba(0,0,0,0.8)] flex items-center justify-center group hover:-translate-y-2 transition-transform">
+                    <span class="spine-title text-[11px] md:text-xs">Chatterbox</span>
+                </div>
+                <!-- Spine 4 -->
+                <div class="book-spine w-14 md:w-16 h-80 md:h-[22rem] rounded-sm shadow-[0_20px_40px_-15px_rgba(0,0,0,0.8)] flex items-center justify-center group hover:-translate-y-2 transition-transform">
+                    <span class="spine-title text-[11px] md:text-xs">The Last Autumn</span>
+                </div>
+            </div>
+
+            <p class="text-center text-xs uppercase tracking-[0.3em] text-neutral-500 italic font-[Cormorant_Garamond]">— By Femi Sowoolu, under the Legacy Bridge imprint —</p>
+
+            <!-- Catalogue note -->
+            <div class="max-w-3xl mx-auto mt-16 p-8 rounded-2xl border border-[#C9A646]/15 bg-black/30 text-center animate-on-scroll">
+                <iconify-icon icon="solar:bookmark-square-minimalistic-linear" width="28" class="text-[#C9A646] mb-4"></iconify-icon>
+                <p class="text-sm text-neutral-300 leading-relaxed mb-4">
+                    The full Legacy Bridge catalogue spans more than <strong class="text-white">500 published works</strong> across fiction, leadership, memoir, and institutional thought. Many remain held under private commission.
+                </p>
+                <a href="legacy-studies.html" class="text-xs uppercase tracking-widest text-[#C9A646] hover:text-white transition-colors flex items-center gap-2 justify-center">
+                    Read selected case studies
+                    <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become an Author CTA -->
+    <section class="py-24 bg-black border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-[#C9A646] opacity-[0.05] blur-[160px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 animate-on-scroll">
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Become an Author</span>
+                    <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 leading-tight font-[Playfair_Display]">
+                        Add your name to <span class="italic text-[#C9A646]">the imprint.</span>
+                    </h2>
+                    <div class="gold-divider w-24 mt-6 mb-8"></div>
+                    <p class="text-neutral-400 leading-relaxed mb-6 max-w-xl">
+                        Every author on our roster began with the same step — a private consultation. We listen first, then place each project in the pathway that protects the value of the idea.
+                    </p>
+                    <p class="text-neutral-500 text-sm leading-relaxed max-w-xl mb-10">
+                        We are intentionally selective. If your work is built to be kept, cited, and inherited — we want to hear about it.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="contact.html" class="shiny-cta">
+                            <span>Begin Your Author Journey</span>
+                            <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                        </a>
+                        <a href="pathways.html" class="btn-secondary">
+                            <span>Explore Pathways</span>
+                            <iconify-icon icon="solar:routing-3-linear" width="14"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sidebar: brand quote -->
+                <div class="lg:col-span-5 animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="relative p-10 rounded-2xl border border-[#C9A646]/30 bg-gradient-to-br from-[#0A1F44] via-[#06142D] to-black overflow-hidden">
+                        <div class="absolute top-4 left-4 w-10 h-10 border-t border-l border-[#C9A646]/40"></div>
+                        <div class="absolute bottom-4 right-4 w-10 h-10 border-b border-r border-[#C9A646]/40"></div>
+                        <iconify-icon icon="solar:quote-up-linear" width="36" class="text-[#C9A646] opacity-60 mb-5"></iconify-icon>
+                        <p class="text-xl md:text-2xl text-white font-[Cormorant_Garamond] italic leading-snug mb-6">
+                            Extract wisdom. Preserve it. Multiply it. So future generations don't just hear what you said — they can study what you knew.
+                        </p>
+                        <footer class="text-[11px] uppercase tracking-[0.3em] text-[#C9A646]">— Esther Dumbiri, Founder</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 px-6 py-10 z-20 relative">
+        <div class="max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <nav class="flex flex-wrap justify-center gap-8 text-[11px] font-bold uppercase tracking-widest text-neutral-500">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="about.html" class="hover:text-white transition-colors">About</a>
+                <a href="pathways.html" class="hover:text-white transition-colors">Pathways</a>
+                <a href="authors.html" class="hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="hover:text-white transition-colors">Media &amp; Press</a>
+                <a href="faqs.html" class="hover:text-white transition-colors">FAQs</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <div class="text-[11px] text-neutral-600 tracking-wide font-medium text-center md:text-right">
+                © 2026 Legacy Bridge Publishing. All rights reserved.<br>
+                <span class="text-neutral-500 italic">Crafted for distinguished voices seeking lasting impact.</span>
+            </div>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" });
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+
+    const mobileToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+        mobileMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+        });
+    }
+});
+</script>
+
+</body></html>

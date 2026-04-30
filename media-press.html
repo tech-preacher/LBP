@@ -1,0 +1,448 @@
+<html lang="en" class="scroll-smooth"><head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media &amp; Press | Legacy Bridge Publishing</title>
+<link rel="icon" type="image/png" href="assets/logos/LBP icon gold.png">
+<link rel="apple-touch-icon" href="assets/logos/LBP icon gold.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;500;600;700;900&amp;family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root { --gold-primary: #C9A646; --gold-light: #E5C158; --gold-dim: #7A6428; }
+body { background-color: #0A1F44; color: #e5e5e5; font-family: 'Inter', sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Space Grotesk', sans-serif; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #06142D; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-primary); }
+@keyframes animationIn {
+0% { opacity: 0; transform: translate3d(0, 30px, 0); filter: blur(8px); }
+100% { opacity: 1; transform: translate3d(0, 0, 0); filter: blur(0px); }
+}
+.animate-on-scroll { opacity: 0; will-change: transform, opacity, filter; }
+.animate-on-scroll.animate { animation: animationIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+.shiny-cta {
+position: relative; padding: 0.75rem 2rem; font-size: 0.875rem; font-weight: 500;
+color: #ffffff; background-color: #0A0A0A; border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 9999px; overflow: hidden; transition: all 0.4s ease; cursor: pointer;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1;
+display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.shiny-cta:hover { border-color: rgba(201, 166, 70, 0.4); box-shadow: 0 0 15px rgba(201, 166, 70, 0.15); transform: translateY(-1px); }
+.btn-secondary {
+position: relative; padding: 0.75rem 2rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 500;
+color: #a3a3a3; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.08); color: white; border-color: rgba(255,255,255,0.15); }
+.perspective-grid {
+background-size: 50px 50px;
+background-image:
+linear-gradient(to right, rgba(201, 166, 70, 0.05) 1px, transparent 1px),
+linear-gradient(to bottom, rgba(201, 166, 70, 0.05) 1px, transparent 1px);
+mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+-webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+pointer-events: none;
+}
+section { scroll-margin-top: 96px; }
+.gold-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(201,166,70,0.5), transparent); }
+
+/* Press card hover */
+.press-card { transition: transform 0.4s ease, border-color 0.4s ease, background-color 0.4s ease; }
+.press-card:hover { transform: translateY(-4px); border-color: rgba(201,166,70,0.4); }
+.press-card:hover .press-arrow { transform: translate(4px, -4px); color: #C9A646; }
+.press-arrow { transition: transform 0.4s ease, color 0.4s ease; }
+
+/* Newspaper masthead style */
+.masthead {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+letter-spacing: -0.01em;
+}
+</style>
+</head>
+<body class="selection:bg-[#C9A646] selection:text-black antialiased bg-black">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center group shrink-0">
+                <img src="assets/logos/LBP Horizontal.png" alt="Legacy Bridge Publishing" class="h-11 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-[13px]">
+                <a href="index.html" class="text-neutral-400 hover:text-white transition-colors">Home</a>
+
+                <div class="relative group">
+                    <a href="about.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-1">
+                        About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-56 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="about.html#philosophy" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Philosophy</a>
+                            <a href="about.html#founder" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Founder</a>
+                            <a href="about.html#pillars" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Pillars</a>
+                            <a href="about.html#council" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Advisory Council</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <a href="pathways.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-1">
+                        Pathways
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-64 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="pathways.html#sovereign" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Sovereign Pathway</a>
+                            <a href="pathways.html#partnership" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Partnership Pathway</a>
+                            <a href="pathways.html#institutional" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">The Institutional Pathway</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="faqs.html" class="text-neutral-400 hover:text-white transition-colors">FAQs</a>
+                <a href="authors.html" class="text-neutral-400 hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="text-neutral-400 hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="text-[#C9A646] hover:text-white transition-colors whitespace-nowrap">Media &amp; Press</a>
+                <a href="contact.html" class="text-neutral-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="tel:+2348118194036" class="hidden sm:flex items-center gap-2 text-[13px] text-neutral-300 hover:text-[#C9A646] transition-colors group">
+                    <span class="w-9 h-9 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] group-hover:bg-[#C9A646]/10 transition-colors">
+                        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>
+                    </span>
+                    <span class="hidden xl:inline whitespace-nowrap font-medium tracking-tight">+234 8118194036</span>
+                </a>
+                <button id="mobile-menu-toggle" aria-label="Open menu" class="lg:hidden w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-neutral-300 hover:text-white hover:border-white/30 transition-colors">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="20"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden hidden border-t border-white/5 bg-[#0A1F44]/95 backdrop-blur-xl">
+            <div class="px-6 py-4 flex flex-col gap-1 text-sm">
+                <a href="index.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Home</a>
+                <details class="group">
+                    <summary class="py-2.5 text-neutral-300 hover:text-[#C9A646] cursor-pointer flex items-center justify-between list-none">About Us<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="about.html#philosophy" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Philosophy</a>
+                        <a href="about.html#founder" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Founder</a>
+                        <a href="about.html#pillars" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Pillars</a>
+                        <a href="about.html#council" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Advisory Council</a>
+                    </div>
+                </details>
+                <details class="group">
+                    <summary class="py-2.5 text-neutral-300 hover:text-[#C9A646] cursor-pointer flex items-center justify-between list-none">Pathways<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="pathways.html#sovereign" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Sovereign Pathway</a>
+                        <a href="pathways.html#partnership" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Partnership Pathway</a>
+                        <a href="pathways.html#institutional" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">The Institutional Pathway</a>
+                    </div>
+                </details>
+                <a href="faqs.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">FAQs</a>
+                <a href="authors.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Authors</a>
+                <a href="legacy-studies.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Legacy Studies</a>
+                <a href="media-press.html" class="py-2.5 text-[#C9A646]">Media &amp; Press</a>
+                <a href="tel:+2348118194036" class="mt-3 py-3 px-4 rounded-lg border border-[#C9A646]/40 text-[#C9A646] flex items-center gap-2"><iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>+234 8118194036</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden">
+        <div class="absolute inset-0 perspective-grid -z-20"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C9A646] opacity-[0.05] blur-[160px] rounded-full -z-10"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] backdrop-blur-md mb-8 animate-on-scroll">
+                <iconify-icon icon="solar:microphone-2-linear" width="14" class="text-[#C9A646]"></iconify-icon>
+                <span class="text-xs uppercase tracking-[0.25em] text-neutral-300">Media &amp; Press</span>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white leading-[1.05] mb-8 font-[Playfair_Display] animate-on-scroll" style="transition-delay: 100ms;">
+                Owning the <span class="italic text-[#C9A646]">spotlight.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-neutral-400 font-light leading-relaxed max-w-3xl mx-auto animate-on-scroll" style="transition-delay: 200ms;">
+                Legacy Bridge has been featured across leading blogs, news outlets, and editorial publications — covering our pathways model, founder vision, and the broader shift toward IP-first publishing across Africa.
+            </p>
+
+            <!-- Stats strip -->
+            <div class="grid grid-cols-3 max-w-2xl mx-auto mt-14 border-t border-b border-white/10 divide-x divide-white/10 animate-on-scroll" style="transition-delay: 300ms;">
+                <div class="py-6 text-center">
+                    <div class="text-3xl md:text-4xl font-semibold text-white font-[Playfair_Display]">04<span class="text-[#C9A646]">+</span></div>
+                    <div class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mt-2">Major Features</div>
+                </div>
+                <div class="py-6 text-center">
+                    <div class="text-3xl md:text-4xl font-semibold text-white font-[Playfair_Display]">3<span class="text-[#C9A646]">×</span></div>
+                    <div class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mt-2">Continents</div>
+                </div>
+                <div class="py-6 text-center">
+                    <div class="text-3xl md:text-4xl font-semibold text-white font-[Playfair_Display]">2025</div>
+                    <div class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mt-2">Latest Coverage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- As Featured In wordmark strip -->
+    <section class="py-14 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-[10px] uppercase tracking-[0.4em] text-neutral-500 text-center mb-10">As featured in</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 items-center">
+                <a href="https://ceotimes.com/how-legacy-bridge-publishing-empowers-african-executives-to-transform-intellectual-capital/" target="_blank" rel="noopener noreferrer" class="group text-center py-6 px-4 rounded-xl border border-white/5 hover:border-[#C9A646]/30 transition-colors">
+                    <span class="masthead text-xl md:text-2xl text-neutral-300 group-hover:text-[#C9A646] transition-colors">CEO Times</span>
+                </a>
+                <a href="https://www.thisdaylive.com/2025/12/10/legacy-bridge-publishing-launches-premium-author-services-for-high-impact-leaders-across-africa-and-beyond/" target="_blank" rel="noopener noreferrer" class="group text-center py-6 px-4 rounded-xl border border-white/5 hover:border-[#C9A646]/30 transition-colors">
+                    <span class="masthead text-xl md:text-2xl text-neutral-300 group-hover:text-[#C9A646] transition-colors italic">This Day</span>
+                </a>
+                <a href="https://usanews.com/newsroom/how-legacy-bridge-publishing-is-turning-executive-wisdom-into-lasting-impact" target="_blank" rel="noopener noreferrer" class="group text-center py-6 px-4 rounded-xl border border-white/5 hover:border-[#C9A646]/30 transition-colors">
+                    <span class="masthead text-xl md:text-2xl text-neutral-300 group-hover:text-[#C9A646] transition-colors">USA News</span>
+                </a>
+                <a href="https://businessday.ng/news/article/beyond-the-bookshelf-how-publishing-is-adopting-the-music-industry-model/" target="_blank" rel="noopener noreferrer" class="group text-center py-6 px-4 rounded-xl border border-white/5 hover:border-[#C9A646]/30 transition-colors">
+                    <span class="masthead text-xl md:text-2xl text-neutral-300 group-hover:text-[#C9A646] transition-colors">Business Day</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Press Articles -->
+    <section class="py-24 bg-black border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Press Coverage</span>
+                <h2 class="text-4xl md:text-5xl font-semibold text-white mt-4 font-[Playfair_Display]">In the <span class="italic text-[#C9A646]">press.</span></h2>
+                <div class="gold-divider w-24 mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Article 1: This Day Live (most recent / dated) - flagged as Latest -->
+                <a href="https://www.thisdaylive.com/2025/12/10/legacy-bridge-publishing-launches-premium-author-services-for-high-impact-leaders-across-africa-and-beyond/" target="_blank" rel="noopener noreferrer" class="press-card group block p-8 md:p-10 rounded-2xl border border-[#C9A646]/30 bg-gradient-to-br from-[#C9A646]/8 via-[#0A1F44]/40 to-transparent animate-on-scroll" style="transition-delay: 50ms;">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center gap-3">
+                            <span class="masthead text-lg text-white italic">This Day</span>
+                            <span class="px-2.5 py-1 rounded-full text-[10px] uppercase tracking-widest bg-[#C9A646]/15 text-[#C9A646] border border-[#C9A646]/30">Latest</span>
+                        </div>
+                        <iconify-icon icon="solar:arrow-right-up-linear" width="22" class="press-arrow text-neutral-500"></iconify-icon>
+                    </div>
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-4">December 10, 2025 · Feature</p>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-white leading-snug font-[Playfair_Display] mb-6">
+                        Legacy Bridge Publishing Launches Premium Author Services for High-Impact Leaders Across Africa and Beyond
+                    </h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Coverage of Legacy Bridge's expansion of its premium author services across Africa, the UK, and global online — positioning the imprint as the boutique publishing partner for leaders, founders, and distinguished voices.
+                    </p>
+                    <div class="mt-8 pt-6 border-t border-white/10 flex items-center gap-2 text-xs uppercase tracking-widest text-[#C9A646]">
+                        Read on This Day Live
+                        <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
+                    </div>
+                </a>
+
+                <!-- Article 2: CEO Times -->
+                <a href="https://ceotimes.com/how-legacy-bridge-publishing-empowers-african-executives-to-transform-intellectual-capital/" target="_blank" rel="noopener noreferrer" class="press-card group block p-8 md:p-10 rounded-2xl border border-white/10 bg-[#0A1F44]/40 animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="flex items-start justify-between mb-6">
+                        <span class="masthead text-lg text-white">CEO Times</span>
+                        <iconify-icon icon="solar:arrow-right-up-linear" width="22" class="press-arrow text-neutral-500"></iconify-icon>
+                    </div>
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-4">Executive Profile</p>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-white leading-snug font-[Playfair_Display] mb-6">
+                        How Legacy Bridge Publishing Empowers African Executives to Transform Intellectual Capital
+                    </h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        A deep look at how Legacy Bridge helps African executives convert lived expertise into structured, defensible intellectual property — books, frameworks, and long-life IP rather than one-off launches.
+                    </p>
+                    <div class="mt-8 pt-6 border-t border-white/10 flex items-center gap-2 text-xs uppercase tracking-widest text-[#C9A646]">
+                        Read on CEO Times
+                        <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
+                    </div>
+                </a>
+
+                <!-- Article 3: USA News -->
+                <a href="https://usanews.com/newsroom/how-legacy-bridge-publishing-is-turning-executive-wisdom-into-lasting-impact" target="_blank" rel="noopener noreferrer" class="press-card group block p-8 md:p-10 rounded-2xl border border-white/10 bg-[#0A1F44]/40 animate-on-scroll" style="transition-delay: 150ms;">
+                    <div class="flex items-start justify-between mb-6">
+                        <span class="masthead text-lg text-white">USA News</span>
+                        <iconify-icon icon="solar:arrow-right-up-linear" width="22" class="press-arrow text-neutral-500"></iconify-icon>
+                    </div>
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-4">Newsroom Feature</p>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-white leading-snug font-[Playfair_Display] mb-6">
+                        How Legacy Bridge Publishing Is Turning Executive Wisdom Into Lasting Impact
+                    </h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        US-side coverage exploring the imprint's premise — that executive wisdom deserves preservation as durable, generation-spanning intellectual capital, not commodified content.
+                    </p>
+                    <div class="mt-8 pt-6 border-t border-white/10 flex items-center gap-2 text-xs uppercase tracking-widest text-[#C9A646]">
+                        Read on USA News
+                        <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
+                    </div>
+                </a>
+
+                <!-- Article 4: Business Day -->
+                <a href="https://businessday.ng/news/article/beyond-the-bookshelf-how-publishing-is-adopting-the-music-industry-model/" target="_blank" rel="noopener noreferrer" class="press-card group block p-8 md:p-10 rounded-2xl border border-white/10 bg-[#0A1F44]/40 animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="flex items-start justify-between mb-6">
+                        <span class="masthead text-lg text-white">Business Day</span>
+                        <iconify-icon icon="solar:arrow-right-up-linear" width="22" class="press-arrow text-neutral-500"></iconify-icon>
+                    </div>
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-4">Industry Analysis</p>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-white leading-snug font-[Playfair_Display] mb-6">
+                        Beyond the Bookshelf: How Publishing Is Adopting the Music Industry Model
+                    </h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        An industry analysis featuring Legacy Bridge's pathways framework as a blueprint for label-style publishing — where the deal follows the asset, not a one-size-fits-all package.
+                    </p>
+                    <div class="mt-8 pt-6 border-t border-white/10 flex items-center gap-2 text-xs uppercase tracking-widest text-[#C9A646]">
+                        Read on Business Day
+                        <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Press Kit + Press Inquiries -->
+    <section class="py-24 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">For Journalists &amp; Editors</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 font-[Playfair_Display]">Press <span class="italic text-[#C9A646]">resources.</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Press kit -->
+                <div class="p-8 rounded-2xl border border-white/5 bg-black/30 hover:border-[#C9A646]/30 transition-colors animate-on-scroll" style="transition-delay: 100ms;">
+                    <iconify-icon icon="solar:download-square-linear" width="28" class="text-[#C9A646] mb-5"></iconify-icon>
+                    <h3 class="text-xl font-semibold text-white font-[Playfair_Display] mb-3">Press Kit</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
+                        Brand assets, founder bio, executive boilerplate, and high-resolution logos — packaged for editorial use.
+                    </p>
+                    <a href="mailto:hello@legacybridgepublishing.com?subject=Press%20Kit%20Request" class="text-xs uppercase tracking-widest text-[#C9A646] hover:text-white transition-colors flex items-center gap-2">
+                        Request press kit
+                        <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Founder interview -->
+                <div class="p-8 rounded-2xl border border-white/5 bg-black/30 hover:border-[#C9A646]/30 transition-colors animate-on-scroll" style="transition-delay: 200ms;">
+                    <iconify-icon icon="solar:user-speak-linear" width="28" class="text-[#C9A646] mb-5"></iconify-icon>
+                    <h3 class="text-xl font-semibold text-white font-[Playfair_Display] mb-3">Founder Interview</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
+                        Esther Dumbiri is available for select editorial interviews on publishing strategy, IP architecture, and African intellectual heritage.
+                    </p>
+                    <a href="mailto:hello@legacybridgepublishing.com?subject=Founder%20Interview%20Request" class="text-xs uppercase tracking-widest text-[#C9A646] hover:text-white transition-colors flex items-center gap-2">
+                        Request interview
+                        <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Story tips -->
+                <div class="p-8 rounded-2xl border border-white/5 bg-black/30 hover:border-[#C9A646]/30 transition-colors animate-on-scroll" style="transition-delay: 300ms;">
+                    <iconify-icon icon="solar:document-add-linear" width="28" class="text-[#C9A646] mb-5"></iconify-icon>
+                    <h3 class="text-xl font-semibold text-white font-[Playfair_Display] mb-3">Story Tips</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed mb-6">
+                        Working on a publishing, intellectual property, or African creative-industry feature? We will respond to relevant story queries promptly.
+                    </p>
+                    <a href="mailto:hello@legacybridgepublishing.com?subject=Story%20Inquiry" class="text-xs uppercase tracking-widest text-[#C9A646] hover:text-white transition-colors flex items-center gap-2">
+                        Send a story tip
+                        <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Press contact -->
+            <div class="mt-12 p-8 rounded-2xl border border-[#C9A646]/20 bg-gradient-to-br from-[#C9A646]/5 via-transparent to-transparent flex flex-col md:flex-row md:items-center justify-between gap-6 animate-on-scroll">
+                <div>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646] mb-2">Direct Press Contact</p>
+                    <p class="text-lg text-white font-[Playfair_Display]">Communications Office, Legacy Bridge Publishing</p>
+                    <p class="text-sm text-neutral-400 mt-1 italic font-[Cormorant_Garamond]">Lagos · London · Global Online — round the clock</p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="mailto:hello@legacybridgepublishing.com" class="btn-secondary">
+                        <iconify-icon icon="solar:letter-linear" width="14"></iconify-icon>
+                        <span>hello@legacybridgepublishing.com</span>
+                    </a>
+                    <a href="tel:+2348118194036" class="btn-secondary">
+                        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>
+                        <span>+234 8118194036</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-24 bg-black border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C9A646] opacity-[0.05] blur-[160px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+            <iconify-icon icon="solar:letter-linear" width="42" class="text-[#C9A646] mb-6"></iconify-icon>
+            <h2 class="text-4xl md:text-5xl font-semibold text-white mb-6 font-[Playfair_Display] leading-tight animate-on-scroll">
+                Want to know about our offers <span class="italic text-[#C9A646]">first?</span>
+            </h2>
+            <p class="text-neutral-400 leading-relaxed mb-10 max-w-xl mx-auto animate-on-scroll" style="transition-delay: 100ms;">
+                Subscribe to our newsletter — be the first to know about new press features, forthcoming Legacy Studies, and editorial releases.
+            </p>
+            <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto animate-on-scroll" style="transition-delay: 200ms;">
+                <input type="email" placeholder="your@email.com" class="flex-1 bg-transparent border border-white/15 rounded-full px-5 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-[#C9A646] transition-colors">
+                <button type="submit" class="shiny-cta whitespace-nowrap">
+                    <span>Subscribe</span>
+                    <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 px-6 py-10 z-20 relative">
+        <div class="max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <nav class="flex flex-wrap justify-center gap-8 text-[11px] font-bold uppercase tracking-widest text-neutral-500">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="about.html" class="hover:text-white transition-colors">About</a>
+                <a href="pathways.html" class="hover:text-white transition-colors">Pathways</a>
+                <a href="authors.html" class="hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="hover:text-white transition-colors">Media &amp; Press</a>
+                <a href="faqs.html" class="hover:text-white transition-colors">FAQs</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <div class="text-[11px] text-neutral-600 tracking-wide font-medium text-center md:text-right">
+                © 2026 Legacy Bridge Publishing. All rights reserved.<br>
+                <span class="text-neutral-500 italic">Crafted for distinguished voices seeking lasting impact.</span>
+            </div>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" });
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+
+    const mobileToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+        mobileMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+        });
+    }
+});
+</script>
+
+</body></html>

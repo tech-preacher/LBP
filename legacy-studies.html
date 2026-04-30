@@ -1,0 +1,570 @@
+<html lang="en" class="scroll-smooth"><head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legacy Studies | Legacy Bridge Publishing</title>
+<link rel="icon" type="image/png" href="assets/logos/LBP icon gold.png">
+<link rel="apple-touch-icon" href="assets/logos/LBP icon gold.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;500;600;700;900&amp;family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root { --gold-primary: #C9A646; --gold-light: #E5C158; --gold-dim: #7A6428; }
+body { background-color: #0A1F44; color: #e5e5e5; font-family: 'Inter', sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Space Grotesk', sans-serif; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #06142D; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-primary); }
+@keyframes animationIn {
+0% { opacity: 0; transform: translate3d(0, 30px, 0); filter: blur(8px); }
+100% { opacity: 1; transform: translate3d(0, 0, 0); filter: blur(0px); }
+}
+.animate-on-scroll { opacity: 0; will-change: transform, opacity, filter; }
+.animate-on-scroll.animate { animation: animationIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+.shiny-cta {
+position: relative; padding: 0.75rem 2rem; font-size: 0.875rem; font-weight: 500;
+color: #ffffff; background-color: #0A0A0A; border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 9999px; overflow: hidden; transition: all 0.4s ease; cursor: pointer;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1;
+display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.shiny-cta:hover { border-color: rgba(201, 166, 70, 0.4); box-shadow: 0 0 15px rgba(201, 166, 70, 0.15); transform: translateY(-1px); }
+.btn-secondary {
+position: relative; padding: 0.75rem 2rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 500;
+color: #a3a3a3; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.08); color: white; border-color: rgba(255,255,255,0.15); }
+.perspective-grid {
+background-size: 50px 50px;
+background-image:
+linear-gradient(to right, rgba(201, 166, 70, 0.05) 1px, transparent 1px),
+linear-gradient(to bottom, rgba(201, 166, 70, 0.05) 1px, transparent 1px);
+mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+-webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+pointer-events: none;
+}
+section { scroll-margin-top: 96px; }
+.gold-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(201,166,70,0.5), transparent); }
+.editorial-rule {
+height: 1px;
+background: rgba(201,166,70,0.3);
+position: relative;
+}
+.editorial-rule::before, .editorial-rule::after {
+content: '';
+position: absolute;
+top: 50%;
+width: 6px; height: 6px;
+border-radius: 50%;
+background: #C9A646;
+transform: translateY(-50%);
+}
+.editorial-rule::before { left: -8px; }
+.editorial-rule::after { right: -8px; }
+.dropcap::first-letter {
+font-family: 'Playfair Display', serif;
+font-size: 4.5rem;
+line-height: 0.85;
+float: left;
+padding-right: 0.5rem;
+padding-top: 0.4rem;
+color: #C9A646;
+font-style: italic;
+font-weight: 600;
+}
+</style>
+</head>
+<body class="selection:bg-[#C9A646] selection:text-black antialiased bg-black">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center group shrink-0">
+                <img src="assets/logos/LBP Horizontal.png" alt="Legacy Bridge Publishing" class="h-11 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-[13px]">
+                <a href="index.html" class="text-neutral-400 hover:text-white transition-colors">Home</a>
+
+                <div class="relative group">
+                    <a href="about.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-1">
+                        About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-56 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="about.html#philosophy" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Philosophy</a>
+                            <a href="about.html#founder" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Founder</a>
+                            <a href="about.html#pillars" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Our Pillars</a>
+                            <a href="about.html#council" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Advisory Council</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <a href="pathways.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-1">
+                        Pathways
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 mt-px transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-64 rounded-xl border border-[#C9A646]/20 bg-[#0A1F44]/95 backdrop-blur-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.6)] py-2">
+                            <a href="pathways.html#sovereign" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Sovereign Pathway</a>
+                            <a href="pathways.html#partnership" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">Partnership Pathway</a>
+                            <a href="pathways.html#institutional" class="block px-5 py-2.5 text-[13px] text-neutral-300 hover:text-[#C9A646] hover:bg-white/5 transition-colors">The Institutional Pathway</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="faqs.html" class="text-neutral-400 hover:text-white transition-colors">FAQs</a>
+                <a href="authors.html" class="text-neutral-400 hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="text-[#C9A646] hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="text-neutral-400 hover:text-white transition-colors whitespace-nowrap">Media &amp; Press</a>
+                <a href="contact.html" class="text-neutral-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="tel:+2348118194036" class="hidden sm:flex items-center gap-2 text-[13px] text-neutral-300 hover:text-[#C9A646] transition-colors group">
+                    <span class="w-9 h-9 rounded-full border border-[#C9A646]/40 flex items-center justify-center text-[#C9A646] group-hover:bg-[#C9A646]/10 transition-colors">
+                        <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>
+                    </span>
+                    <span class="hidden xl:inline whitespace-nowrap font-medium tracking-tight">+234 8118194036</span>
+                </a>
+                <button id="mobile-menu-toggle" aria-label="Open menu" class="lg:hidden w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-neutral-300 hover:text-white hover:border-white/30 transition-colors">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="20"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden hidden border-t border-white/5 bg-[#0A1F44]/95 backdrop-blur-xl">
+            <div class="px-6 py-4 flex flex-col gap-1 text-sm">
+                <a href="index.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Home</a>
+                <details class="group">
+                    <summary class="py-2.5 text-neutral-300 hover:text-[#C9A646] cursor-pointer flex items-center justify-between list-none">About Us<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="about.html#philosophy" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Philosophy</a>
+                        <a href="about.html#founder" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Founder</a>
+                        <a href="about.html#pillars" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Our Pillars</a>
+                        <a href="about.html#council" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Advisory Council</a>
+                    </div>
+                </details>
+                <details class="group">
+                    <summary class="py-2.5 text-neutral-300 hover:text-[#C9A646] cursor-pointer flex items-center justify-between list-none">Pathways<iconify-icon icon="solar:alt-arrow-down-linear" width="14" class="group-open:rotate-180 transition-transform"></iconify-icon></summary>
+                    <div class="pl-4 flex flex-col gap-1 mt-1 mb-2 border-l border-white/10">
+                        <a href="pathways.html#sovereign" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Sovereign Pathway</a>
+                        <a href="pathways.html#partnership" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">Partnership Pathway</a>
+                        <a href="pathways.html#institutional" class="py-1.5 text-[13px] text-neutral-400 hover:text-[#C9A646]">The Institutional Pathway</a>
+                    </div>
+                </details>
+                <a href="faqs.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">FAQs</a>
+                <a href="authors.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Authors</a>
+                <a href="legacy-studies.html" class="py-2.5 text-[#C9A646]">Legacy Studies</a>
+                <a href="media-press.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Media &amp; Press</a>
+                <a href="contact.html" class="py-2.5 text-neutral-300 hover:text-[#C9A646]">Contact</a>
+                <a href="tel:+2348118194036" class="mt-3 py-3 px-4 rounded-lg border border-[#C9A646]/40 text-[#C9A646] flex items-center gap-2"><iconify-icon icon="solar:phone-linear" width="14"></iconify-icon>+234 8118194036</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden">
+        <div class="absolute inset-0 perspective-grid -z-20"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C9A646] opacity-[0.05] blur-[160px] rounded-full -z-10"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] backdrop-blur-md mb-8 animate-on-scroll">
+                <iconify-icon icon="solar:archive-minimalistic-linear" width="14" class="text-[#C9A646]"></iconify-icon>
+                <span class="text-xs uppercase tracking-[0.25em] text-neutral-300">Editorial Archive</span>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white leading-[1.05] mb-8 font-[Playfair_Display] animate-on-scroll" style="transition-delay: 100ms;">
+                Legacy <span class="italic text-[#C9A646]">Studies.</span>
+            </h1>
+
+            <div class="max-w-3xl mx-auto animate-on-scroll" style="transition-delay: 200ms;">
+                <p class="text-xl md:text-2xl text-neutral-300 font-[Cormorant_Garamond] italic leading-relaxed mb-6">
+                    A curated body of work examining lives, decisions, and systems that endure beyond performance.
+                </p>
+                <div class="flex justify-center my-10">
+                    <div class="editorial-rule w-32 relative"></div>
+                </div>
+                <p class="text-base md:text-lg text-neutral-400 font-light leading-relaxed">
+                    Legacy Studies exists to ensure that serious lives are not misunderstood by history.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto / Purpose -->
+    <section class="py-20 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-14 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">The Premise</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 font-[Playfair_Display]">An archive for <span class="italic text-[#C9A646]">legacies-in-progress.</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <div class="space-y-6 text-[15px] md:text-base leading-relaxed text-neutral-300 animate-on-scroll" style="transition-delay: 100ms;">
+                <p class="dropcap">
+                    Legacy is often discussed after it is complete. We believe it should be understood while it is still being formed.
+                </p>
+                <p>
+                    Legacy Studies is an editorial archive dedicated to documenting legacies-in-progress — public lives whose meaning extends beyond performance and requires accurate preservation before it becomes urgent.
+                </p>
+                <p>
+                    These are not profiles, biographies, or tributes. They are disciplined examinations of orientation, stewardship, and continuity — preserved with care, restraint, and intellectual rigour.
+                </p>
+                <p class="text-neutral-400">
+                    This archive exists to ensure that serious lives are not flattened by memory, nor reduced to moments that were easiest to notice.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Four Lenses -->
+    <section class="py-24 bg-black border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Method</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 font-[Playfair_Display]">Four <span class="italic text-[#C9A646]">study lenses.</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-neutral-400 leading-relaxed">
+                    Every study is examined through the same disciplined frame.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Lens 1: Formation -->
+                <div class="group p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 100ms;">
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-[#C9A646]">Lens 01</span>
+                    <h3 class="text-xl font-semibold text-white mt-2 mb-4 font-[Playfair_Display]">Formation</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        What shaped the person before visibility arrived.
+                    </p>
+                </div>
+
+                <!-- Lens 2: Decision-Making -->
+                <div class="group p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 200ms;">
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-[#C9A646]">Lens 02</span>
+                    <h3 class="text-xl font-semibold text-white mt-2 mb-4 font-[Playfair_Display]">Decision-Making</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        How choices were governed under pressure.
+                    </p>
+                </div>
+
+                <!-- Lens 3: Stewardship -->
+                <div class="group p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 300ms;">
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-[#C9A646]">Lens 03</span>
+                    <h3 class="text-xl font-semibold text-white mt-2 mb-4 font-[Playfair_Display]">Stewardship</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        What was built quietly alongside success.
+                    </p>
+                </div>
+
+                <!-- Lens 4: Continuity -->
+                <div class="group p-8 rounded-2xl border border-white/5 bg-[#0A1F44]/40 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 400ms;">
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-[#C9A646]">Lens 04</span>
+                    <h3 class="text-xl font-semibold text-white mt-2 mb-4 font-[Playfair_Display]">Continuity</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        What remains functional beyond applause.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Principles + Intended Readers -->
+    <section class="py-24 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+            <!-- Editorial Principles -->
+            <div class="animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Editorial Principles</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 mb-6 font-[Playfair_Display]">What we <span class="italic text-[#C9A646]">don't</span> do.</h2>
+                <div class="gold-divider w-24 mb-8"></div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-5 rounded-xl border border-white/5 bg-black/30">
+                        <iconify-icon icon="solar:close-circle-linear" width="22" class="text-[#C9A646] shrink-0"></iconify-icon>
+                        <p class="text-sm text-neutral-300">No hype.</p>
+                    </div>
+                    <div class="flex items-center gap-4 p-5 rounded-xl border border-white/5 bg-black/30">
+                        <iconify-icon icon="solar:close-circle-linear" width="22" class="text-[#C9A646] shrink-0"></iconify-icon>
+                        <p class="text-sm text-neutral-300">No moral instruction.</p>
+                    </div>
+                    <div class="flex items-center gap-4 p-5 rounded-xl border border-white/5 bg-black/30">
+                        <iconify-icon icon="solar:close-circle-linear" width="22" class="text-[#C9A646] shrink-0"></iconify-icon>
+                        <p class="text-sm text-neutral-300">No performance language.</p>
+                    </div>
+                    <div class="flex items-center gap-4 p-5 rounded-xl border border-white/5 bg-black/30">
+                        <iconify-icon icon="solar:close-circle-linear" width="22" class="text-[#C9A646] shrink-0"></iconify-icon>
+                        <p class="text-sm text-neutral-300">No monetisation framing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intended Readers -->
+            <div class="animate-on-scroll" style="transition-delay: 200ms;">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Intended Readers</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 mb-6 font-[Playfair_Display]">Who reads <span class="italic text-[#C9A646]">these.</span></h2>
+                <div class="gold-divider w-24 mb-8"></div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="p-5 rounded-xl border border-white/5 bg-black/30">
+                        <iconify-icon icon="solar:medal-ribbons-star-linear" width="22" class="text-[#C9A646] mb-3"></iconify-icon>
+                        <p class="text-sm text-neutral-300 leading-snug">Leaders &amp; Founders</p>
+                    </div>
+                    <div class="p-5 rounded-xl border border-white/5 bg-black/30">
+                        <iconify-icon icon="solar:wallet-money-linear" width="22" class="text-[#C9A646] mb-3"></iconify-icon>
+                        <p class="text-sm text-neutral-300 leading-snug">High-Net-Worth Individuals</p>
+                    </div>
+                    <div class="p-5 rounded-xl border border-white/5 bg-black/30">
+                        <iconify-icon icon="solar:running-2-linear" width="22" class="text-[#C9A646] mb-3"></iconify-icon>
+                        <p class="text-sm text-neutral-300 leading-snug">Athletes &amp; Public Figures</p>
+                    </div>
+                    <div class="p-5 rounded-xl border border-white/5 bg-black/30">
+                        <iconify-icon icon="solar:palette-linear" width="22" class="text-[#C9A646] mb-3"></iconify-icon>
+                        <p class="text-sm text-neutral-300 leading-snug">Creatives</p>
+                    </div>
+                    <div class="p-5 rounded-xl border border-white/5 bg-black/30 col-span-2">
+                        <iconify-icon icon="solar:buildings-3-linear" width="22" class="text-[#C9A646] mb-3"></iconify-icon>
+                        <p class="text-sm text-neutral-300 leading-snug">Institutions concerned with preservation</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Featured Study: Odion Ighalo -->
+    <section class="py-24 bg-black border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-1/3 right-0 w-[500px] h-[500px] bg-[#C9A646] opacity-[0.05] blur-[140px] rounded-full -z-10"></div>
+
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">Published Study · 01</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 font-[Playfair_Display]">From the <span class="italic text-[#C9A646]">archive.</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <article class="relative rounded-3xl border border-[#C9A646]/20 bg-gradient-to-br from-[#0A1F44]/80 via-[#06142D]/60 to-black overflow-hidden animate-on-scroll" style="transition-delay: 150ms;">
+                <!-- Decorative corners -->
+                <div class="absolute top-6 left-6 w-12 h-12 border-t border-l border-[#C9A646]/40 pointer-events-none"></div>
+                <div class="absolute top-6 right-6 w-12 h-12 border-t border-r border-[#C9A646]/40 pointer-events-none"></div>
+                <div class="absolute bottom-6 left-6 w-12 h-12 border-b border-l border-[#C9A646]/40 pointer-events-none"></div>
+                <div class="absolute bottom-6 right-6 w-12 h-12 border-b border-r border-[#C9A646]/40 pointer-events-none"></div>
+
+                <div class="relative p-8 md:p-14 lg:p-20">
+                    <!-- Header meta -->
+                    <div class="flex flex-wrap items-center gap-4 mb-8">
+                        <span class="px-3 py-1.5 rounded-full text-[10px] uppercase tracking-[0.25em] bg-[#C9A646]/10 text-[#C9A646] border border-[#C9A646]/30">Sport · Stewardship</span>
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Volume 01 · Study 001</span>
+                    </div>
+
+                    <!-- Subject -->
+                    <p class="text-sm uppercase tracking-[0.3em] text-[#C9A646] mb-4">Subject</p>
+                    <p class="text-2xl md:text-3xl font-[Playfair_Display] text-white mb-12 italic">Odion Ighalo</p>
+
+                    <!-- Title -->
+                    <h3 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight font-[Playfair_Display] mb-4">
+                        After the Applause:
+                    </h3>
+                    <h3 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-[#C9A646] italic leading-tight font-[Playfair_Display] mb-12">
+                        The Discipline of Quiet Legacy.
+                    </h3>
+
+                    <div class="gold-divider w-32 mb-12"></div>
+
+                    <!-- Body -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-12">
+                        <div class="lg:col-span-7 space-y-5 text-[15px] leading-relaxed text-neutral-300">
+                            <p class="dropcap">
+                                Rather than recounting goals or milestones, the study examines what is less documented — the governance of success, visibility resistance, and continuity protection that shape a serious life beyond the spotlight.
+                            </p>
+                            <p class="text-neutral-400">
+                                It is not a record of what was scored. It is an examination of what was carried forward, quietly, after applause receded — and how a public figure governs his own meaning while still in motion.
+                            </p>
+                        </div>
+
+                        <!-- Sidebar: Lenses applied -->
+                        <aside class="lg:col-span-5">
+                            <div class="p-6 rounded-xl border border-white/5 bg-black/40">
+                                <p class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646] mb-4">Lenses Applied</p>
+                                <ul class="space-y-3 text-sm text-neutral-300">
+                                    <li class="flex items-start gap-3"><span class="text-[#C9A646] mt-0.5">·</span><span>Formation — origin and orientation</span></li>
+                                    <li class="flex items-start gap-3"><span class="text-[#C9A646] mt-0.5">·</span><span>Decision-Making — under public scrutiny</span></li>
+                                    <li class="flex items-start gap-3"><span class="text-[#C9A646] mt-0.5">·</span><span>Stewardship — the work alongside the work</span></li>
+                                    <li class="flex items-start gap-3"><span class="text-[#C9A646] mt-0.5">·</span><span>Continuity — what survives the era</span></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <!-- Pull quote -->
+                    <blockquote class="border-l-2 border-[#C9A646] pl-6 italic text-xl md:text-2xl text-white font-[Cormorant_Garamond] leading-snug max-w-3xl mb-12">
+                        Visibility resistance is not silence — it is the disciplined refusal to mistake noise for meaning.
+                    </blockquote>
+
+                    <!-- Status / future -->
+                    <div class="flex flex-wrap items-center justify-between gap-4 pt-8 border-t border-white/10">
+                        <div class="flex items-center gap-4 text-xs text-neutral-500">
+                            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C9A646]"></span>Published</span>
+                            <span class="text-neutral-700">·</span>
+                            <span>Restricted distribution</span>
+                        </div>
+                        <a href="contact.html" class="text-xs uppercase tracking-widest text-[#C9A646] hover:text-white transition-colors flex items-center gap-2">
+                            Request reading access
+                            <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Forthcoming -->
+    <section class="py-24 bg-[#0A1F44] border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#C9A646]">In Preparation</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mt-4 font-[Playfair_Display]">Forthcoming <span class="italic text-[#C9A646]">studies.</span></h2>
+                <div class="gold-divider w-24 mx-auto mt-6"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-neutral-400 leading-relaxed">
+                    Three studies currently under editorial development. Subjects withheld until publication.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Study 02 -->
+                <div class="group relative p-8 rounded-2xl border border-white/10 bg-black/30 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="flex items-start justify-between mb-6">
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-[#C9A646]">Study · 02</span>
+                        <span class="text-[10px] uppercase tracking-widest text-neutral-500 italic">Forthcoming</span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-white font-[Playfair_Display] leading-tight italic">
+                        When Influence Outgrows Visibility.
+                    </h3>
+                    <div class="gold-divider w-16 my-6 opacity-60"></div>
+                    <p class="text-xs text-neutral-500 italic font-[Cormorant_Garamond] text-sm">
+                        On the moment a body of work begins to operate with more authority than the figure that produced it.
+                    </p>
+                </div>
+
+                <!-- Study 03 -->
+                <div class="group relative p-8 rounded-2xl border border-white/10 bg-black/30 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="flex items-start justify-between mb-6">
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-[#C9A646]">Study · 03</span>
+                        <span class="text-[10px] uppercase tracking-widest text-neutral-500 italic">Forthcoming</span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-white font-[Playfair_Display] leading-tight italic">
+                        The Weight of Staying.
+                    </h3>
+                    <div class="gold-divider w-16 my-6 opacity-60"></div>
+                    <p class="text-xs text-neutral-500 italic font-[Cormorant_Garamond] text-sm">
+                        On longevity as a discipline — the cost of remaining present long enough to be properly understood.
+                    </p>
+                </div>
+
+                <!-- Study 04 -->
+                <div class="group relative p-8 rounded-2xl border border-white/10 bg-black/30 hover:border-[#C9A646]/30 transition-all duration-500 animate-on-scroll" style="transition-delay: 300ms;">
+                    <div class="flex items-start justify-between mb-6">
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-[#C9A646]">Study · 04</span>
+                        <span class="text-[10px] uppercase tracking-widest text-neutral-500 italic">Forthcoming</span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-white font-[Playfair_Display] leading-tight italic">
+                        What Is Passed On.
+                    </h3>
+                    <div class="gold-divider w-16 my-6 opacity-60"></div>
+                    <p class="text-xs text-neutral-500 italic font-[Cormorant_Garamond] text-sm">
+                        On inheritance beyond wealth — the philosophies, structures, and orientations that survive their authors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA: Subscribe + Commission -->
+    <section class="py-24 bg-black border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C9A646] opacity-[0.05] blur-[160px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 relative z-10">
+
+            <!-- Subscribe -->
+            <div class="p-10 md:p-12 rounded-2xl border border-white/10 bg-[#0A1F44]/40 animate-on-scroll">
+                <iconify-icon icon="solar:letter-linear" width="32" class="text-[#C9A646] mb-5"></iconify-icon>
+                <h3 class="text-2xl md:text-3xl font-semibold text-white mb-4 font-[Playfair_Display] leading-tight">Be notified when a <span class="italic text-[#C9A646]">study is released.</span></h3>
+                <p class="text-sm text-neutral-400 leading-relaxed mb-8">
+                    Studies are published quietly. Subscribers are notified privately, before the archive is updated publicly.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="your@email.com" class="flex-1 bg-transparent border border-white/15 rounded-full px-5 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-[#C9A646] transition-colors">
+                    <button type="submit" class="shiny-cta whitespace-nowrap">
+                        <span>Subscribe</span>
+                        <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Commission -->
+            <div class="p-10 md:p-12 rounded-2xl border border-[#C9A646]/30 bg-gradient-to-br from-[#C9A646]/8 via-[#0A1F44]/30 to-transparent animate-on-scroll" style="transition-delay: 200ms;">
+                <iconify-icon icon="solar:archive-up-linear" width="32" class="text-[#C9A646] mb-5"></iconify-icon>
+                <h3 class="text-2xl md:text-3xl font-semibold text-white mb-4 font-[Playfair_Display] leading-tight">Commission a <span class="italic text-[#C9A646]">study.</span></h3>
+                <p class="text-sm text-neutral-400 leading-relaxed mb-8">
+                    A serious life requires accurate preservation before it becomes urgent. If you are a leader, founder, or institution considering a Legacy Study, our editorial team will respond personally.
+                </p>
+                <a href="contact.html" class="shiny-cta">
+                    <span>Begin a Private Inquiry</span>
+                    <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 px-6 py-10 z-20 relative">
+        <div class="max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <nav class="flex flex-wrap justify-center gap-8 text-[11px] font-bold uppercase tracking-widest text-neutral-500">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="about.html" class="hover:text-white transition-colors">About</a>
+                <a href="pathways.html" class="hover:text-white transition-colors">Pathways</a>
+                <a href="authors.html" class="hover:text-white transition-colors">Authors</a>
+                <a href="legacy-studies.html" class="hover:text-white transition-colors">Legacy Studies</a>
+                <a href="media-press.html" class="hover:text-white transition-colors">Media &amp; Press</a>
+                <a href="faqs.html" class="hover:text-white transition-colors">FAQs</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <div class="text-[11px] text-neutral-600 tracking-wide font-medium text-center md:text-right">
+                © 2026 Legacy Bridge Publishing. All rights reserved.<br>
+                <span class="text-neutral-500 italic">Crafted for distinguished voices seeking lasting impact.</span>
+            </div>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" });
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+
+    const mobileToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+        mobileMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+        });
+    }
+});
+</script>
+
+</body></html>
